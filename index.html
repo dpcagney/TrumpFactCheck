@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Same As It Ever Was — Fact-check &amp; perspective on Trump</title>
+  <meta name="description" content="Real-time fact-checking with reputable sources, plus the long historical view: every president before him was flawed too. This too shall pass." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%87%BA%F0%9F%87%B8%3C/text%3E%3C/svg%3E" />
+</head>
+<body>
+  <!-- ===== NAV ===== -->
+  <header class="nav">
+    <a class="brand" href="#top">
+      <span class="brand-mark">◷</span>
+      <span class="brand-name">Same As It Ever Was</span>
+    </a>
+    <nav class="nav-links">
+      <a href="#feed">Fact-Checks</a>
+      <a href="#timeline">Zoom Out</a>
+      <a href="#breathe">Breathe</a>
+      <a href="#about">About</a>
+    </nav>
+    <button id="themeToggle" class="theme-toggle" aria-label="Toggle light/dark theme" title="Toggle theme">🌙</button>
+  </header>
+
+  <!-- ===== HERO ===== -->
+  <section id="top" class="hero">
+    <div class="hero-inner">
+      <p class="eyebrow">FACT-CHECK · CONTEXT · PERSPECTIVE</p>
+      <h1>He says a lot.<br /><span class="grad">We check it. Then we zoom out.</span></h1>
+      <p class="lede">
+        Every claim, checked against reputable sources. And next to every one — the receipt from history
+        showing a president before him who said or did the very same thing. There were nutsos before.
+        There'll be nutsos after. The republic keeps standing.
+      </p>
+      <div class="hero-cta">
+        <a class="btn btn-primary" href="#feed">See the fact-checks →</a>
+        <a class="btn btn-ghost" href="#breathe">Take a breath</a>
+      </div>
+
+      <!-- Panic-o-Meter -->
+      <div class="panic" aria-hidden="false">
+        <div class="panic-head">
+          <span>The Panic-o-Meter™</span>
+          <span id="panicLabel" class="panic-label">Calibrating…</span>
+        </div>
+        <div class="panic-track">
+          <div id="panicFill" class="panic-fill"></div>
+          <div id="panicKnob" class="panic-knob"></div>
+        </div>
+        <div class="panic-scale">
+          <span>This too shall pass</span>
+          <span>It's been worse, honestly</span>
+          <span>End of the world</span>
+        </div>
+        <p class="panic-note" id="panicNote"></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FACT-CHECK FEED ===== -->
+  <section id="feed" class="section">
+    <div class="section-head">
+      <h2>The Fact-Check Feed</h2>
+      <p>Claims he's actually made — with sources. Tap any card to see how history rhymes.</p>
+    </div>
+
+    <div class="controls">
+      <input id="search" class="search" type="search" placeholder="Search claims, topics, presidents…" aria-label="Search fact-checks" />
+      <div class="filters" id="filters" role="tablist" aria-label="Filter by verdict">
+        <button class="chip is-active" data-verdict="all">All</button>
+        <button class="chip" data-verdict="false">False</button>
+        <button class="chip" data-verdict="misleading">Misleading</button>
+        <button class="chip" data-verdict="context">Needs Context</button>
+      </div>
+    </div>
+
+    <div id="cards" class="cards"></div>
+    <p id="noResults" class="no-results" hidden>No claims match that search. Try another word.</p>
+  </section>
+
+  <!-- ===== TIMELINE ===== -->
+  <section id="timeline" class="section timeline-section">
+    <div class="section-head">
+      <h2>Zoom Out: 240 Years of “Unprecedented”</h2>
+      <p>Every era is certain it's living through the uniquely catastrophic one. Here's the receipt that it isn't.</p>
+    </div>
+    <div id="timelineTrack" class="timeline"></div>
+  </section>
+
+  <!-- ===== BREATHE ===== -->
+  <section id="breathe" class="section breathe">
+    <div class="breathe-card">
+      <h2>Take a breath.</h2>
+      <p id="perspective" class="perspective"></p>
+      <button id="breatheBtn" class="btn btn-primary">Give me perspective →</button>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section id="about" class="section about">
+    <div class="section-head">
+      <h2>Why this exists</h2>
+    </div>
+    <div class="about-grid">
+      <div class="about-col">
+        <h3>The goal</h3>
+        <p>
+          Not to tell you how to feel about any president — but to give you two things at once:
+          <strong>accurate facts</strong> and <strong>historical perspective</strong>. Panic and
+          apathy are both easy. Informed calm is harder, and better.
+        </p>
+      </div>
+      <div class="about-col">
+        <h3>The sourcing</h3>
+        <p>
+          Every verdict links to non-partisan sources: the Associated Press, Reuters, PolitiFact,
+          FactCheck.org, The Washington Post Fact Checker, court records, and government agencies.
+          Every historical parallel is a documented event. Don't trust us — click the links.
+        </p>
+      </div>
+      <div class="about-col">
+        <h3>The bet</h3>
+        <p>
+          That the country has metabolized demagogues, scandals, tariff fevers, and press-bashing
+          before, and will again. The Constitution assumes leaders will be flawed and temporary —
+          and routes around them. <strong>This too shall pass.</strong>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>
+      <strong>Same As It Ever Was</strong> · Fact-check &amp; perspective engine ·
+      Built with reputable sources and a long memory.
+    </p>
+    <p class="footer-fine">
+      Educational and editorial project. Verdicts summarize reporting from the linked sources.
+      Historical parallels are documented events, not endorsements of any figure.
+    </p>
+  </footer>
+
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
