@@ -15,6 +15,68 @@
 
 const FACT_CHECKS = [
   {
+    id: "prices-2025",
+    claim: "“We've ended inflation… prices are down. Eggs are down 50, 60, 70 percent.”",
+    topic: "Economy",
+    verdict: "misleading",
+    summary:
+      "It's a mix. Wholesale egg prices did fall sharply in early 2025 as an avian-flu spike eased, and by late 2025 retail eggs were well below their January peak — but overall inflation (headline CPI) rose during Trump's first year back, so “ended” overstates it. Economists credit the bird-flu cycle, not policy, for the egg swings.",
+    sources: [
+      { name: "FactCheck.org — “Are Prices Up or Down?” (July 2025)", url: "https://www.factcheck.org/2025/07/are-prices-up-or-down-parsing-misleading-claims-by-trump-and-democrats/" },
+      { name: "PolitiFact — fact-checking the egg-price claim (Apr 2025)", url: "https://www.politifact.com/factchecks/2025/apr/04/donald-trump/fact-checking-trumps-statement-about-declining-egg/" },
+      { name: "PolitiFact — inflation after one year under Trump (Jan 2026)", url: "https://www.politifact.com/article/2026/jan/20/trump-inflation-one-year-groceries-cars-prices/" }
+    ],
+    rhyme: {
+      president: "Richard Nixon",
+      year: "1971",
+      title: "Wage and Price Controls",
+      text:
+        "Presidents get outsized blame and credit for prices they mostly don't control in the short run. In August 1971 Richard Nixon tried to freeze wages and prices by executive order to kill inflation. It was wildly popular at first — and failed within two years, producing shortages and distortions before inflation roared back worse than before. Overpromising on prices is a bipartisan presidential tradition.",
+      source: { name: "Federal Reserve History — “The Great Inflation”", url: "https://www.federalreservehistory.org/essays/great-inflation" }
+    }
+  },
+  {
+    id: "tylenol-autism",
+    claim: "“Don't take Tylenol… taking it during pregnancy is linked to autism.”",
+    topic: "Science",
+    verdict: "false",
+    summary:
+      "No study has shown acetaminophen (Tylenol) causes autism — decades of research show, at most, an unproven association, and several studies show none. The American College of Obstetricians and Gynecologists and the American Academy of Pediatrics warn that untreated fever or pain in pregnancy carries real risks, so telling women to “tough it out” can itself do harm.",
+    sources: [
+      { name: "FactCheck.org — Tylenol and autism claims (Sept 2025)", url: "https://www.factcheck.org/2025/09/trump-administrations-problematic-claims-on-tylenol-and-autism/" },
+      { name: "NPR — the science doesn't back it up", url: "https://www.npr.org/sections/shots-health-news/2025/09/22/nx-s1-5550153/trump-rfk-autism-tylenol-leucovorin-pregnancy" },
+      { name: "PolitiFact — Tylenol, autism and vaccine claims", url: "https://www.politifact.com/article/2025/sep/23/autism-tylenol-announcement-vaccine-claims/" }
+    ],
+    rhyme: {
+      president: "Gerald Ford",
+      year: "1976",
+      title: "The Swine Flu Vaccination Fiasco",
+      text:
+        "Health misjudgment at the top isn't partisan or new. In 1976, fearing a pandemic, the Ford administration rushed to vaccinate the entire country against swine flu — more than 40 million people in a few months. The pandemic never came, the shot was tied to a rare paralytic side effect, and the program was halted. Government getting the science wrong — in either direction — is old, and the institutions course-correct.",
+      source: { name: "Gerald R. Ford Presidential Library", url: "https://www.fordlibrarymuseum.gov/digital-research-room/topic-guides/swine-flu-immunization-program-1976" }
+    }
+  },
+  {
+    id: "tariff-revenue-2025",
+    claim: "“We're taking in $2 billion a day in tariffs — $88 billion in just two months.”",
+    topic: "Economy",
+    verdict: "false",
+    summary:
+      "Treasury data showed tariff collections running well below those figures — the $88 billion claim was more than double the actual two-month total, and trade experts said “$2 billion a day” wasn't supported. And because tariffs are paid by U.S. importers, this “revenue” is largely a tax on Americans, not a check from abroad.",
+    sources: [
+      { name: "PolitiFact — “almost $2 billion a day” (Apr 2025)", url: "https://www.politifact.com/factchecks/2025/apr/10/donald-trump/fact-check-trump-said-tariffs-collections-are-almo/" },
+      { name: "FactCheck.org — recapping deceptive tariff claims (Aug 2025)", url: "https://www.factcheck.org/2025/08/recapping-trumps-deceptive-tariff-claims/" }
+    ],
+    rhyme: {
+      president: "William McKinley",
+      year: "1890",
+      title: "When tariffs really did fund the government",
+      text:
+        "There's a grain of history here. Before the federal income tax, tariffs were the main source of federal revenue — over half of it — and Rep. William McKinley built a career on the 1890 tariff that bears his name. But the country deliberately moved to an income tax (ratified 1913) because tariffs are a regressive, volatile way to fund a modern government, and the McKinley Tariff's own unpopularity helped drive that shift. The nostalgia is real; the modern math isn't.",
+      source: { name: "U.S. House of Representatives — “The McKinley Tariff of 1890”", url: "https://history.house.gov/Historical-Highlights/1851-1900/The-McKinley-Tariff-of-1890/" }
+    }
+  },
+  {
     id: "election-2020",
     claim: "“The 2020 election was rigged and stolen.”",
     topic: "Elections",
