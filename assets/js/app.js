@@ -191,7 +191,7 @@
 
   /* ---------- matrix ---------- */
   const TAG_CLASS = (t) => t.toLowerCase().replace(/[^a-z]+/g, "-").replace(/^-|-$/g, "");
-  const mx = { q: "", role: "all", admin: "all", tag: "all", sort: "date-desc" };
+  const mx = { q: "", role: "all", admin: "all", tag: "all", theme: "all", sort: "date-desc" };
   let THEME_MAP = {};
   const shortSum = (s) => (s.length > 150 ? s.slice(0, 147).replace(/\s+\S*$/, "") + "…" : s);
 
@@ -224,6 +224,7 @@
       if (mx.role !== "all" && e.roleCat !== mx.role) return false;
       if (mx.admin !== "all" && e.admin !== mx.admin) return false;
       if (mx.tag !== "all" && e.tag !== mx.tag) return false;
+      if (mx.theme !== "all" && e.theme !== mx.theme) return false;
       if (mx.q) {
         const hay = (e.person + " " + e.role + " " + e.admin + " " + e.topic + " " + e.theme + " " + e.summary + " " + e.tag).toLowerCase();
         if (!hay.includes(mx.q)) return false;
@@ -243,11 +244,11 @@
       .map(
         (e) => `
       <tr class="mx-row">
-        <td class="mx-date"><span class="mx-caret">▸</span>${esc(e.dateText)}</td>
+        <td class="mx-date"><span class="mx-caret">▸</span><span class="prov prov-${e.origin === "curated" ? "curated" : "auto"}" title="${e.origin === "curated" ? "Curated & source-checked" : "Auto-added by the daily refresh — worth a spot-check"}">●</span>${esc(e.dateText)}</td>
         <td class="mx-person">${esc(e.person)}</td>
         <td class="mx-role">${esc(e.role)}</td>
         <td class="mx-admin">${esc(e.admin)}</td>
-        <td class="mx-what">${esc(e.summary)}<span class="mx-src"><a href="${esc(e.source.url)}" target="_blank" rel="noopener noreferrer">↗ ${esc(e.source.name)}</a></span></td>
+        <td class="mx-what"><span class="mx-theme">${esc(e.theme)}</span>${esc(e.summary)}<span class="mx-src"><a href="${esc(e.source.url)}" target="_blank" rel="noopener noreferrer">↗ ${esc(e.source.name)}</a></span></td>
         <td><span class="badge ${TAG_CLASS(e.tag)}">${esc(e.tag)}</span></td>
       </tr>
       <tr class="mx-detail" hidden><td colspan="6">${rhymesHTML(e)}</td></tr>`
@@ -298,11 +299,13 @@
     fillSelect($("#mxRole"), uniqSorted(ENTRIES.map((e) => e.roleCat)), "All roles");
     fillSelect($("#mxAdmin"), admins, "All administrations");
     fillSelect($("#mxTag"), uniqSorted(ENTRIES.map((e) => e.tag)), "All verdicts");
+    fillSelect($("#mxTheme"), uniqSorted(ENTRIES.map((e) => e.theme)), "All themes");
 
     $("#mxSearch").addEventListener("input", (e) => { mx.q = e.target.value.trim().toLowerCase(); renderMatrix(); });
     $("#mxRole").addEventListener("change", (e) => { mx.role = e.target.value; renderMatrix(); });
     $("#mxAdmin").addEventListener("change", (e) => { mx.admin = e.target.value; renderMatrix(); });
     $("#mxTag").addEventListener("change", (e) => { mx.tag = e.target.value; renderMatrix(); });
+    $("#mxTheme").addEventListener("change", (e) => { mx.theme = e.target.value; renderMatrix(); });
     $("#mxSort").addEventListener("change", (e) => { mx.sort = e.target.value; renderMatrix(); });
 
     $$(".mx-table th.sortable").forEach((th) => {

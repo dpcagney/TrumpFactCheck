@@ -217,7 +217,12 @@ h1, h2, h3 { line-height: 1.15; letter-spacing: -0.02em; margin: 0; }
   background: var(--card); color: var(--text); font-weight: 600; font-size: 0.9rem; cursor: pointer;
 }
 .mx-select:focus { outline: 2px solid var(--brand); outline-offset: 1px; }
-.mx-count { color: var(--muted); font-size: 0.85rem; margin: 0 0 14px; font-weight: 600; }
+.mx-count { color: var(--muted); font-size: 0.85rem; margin: 0 0 6px; font-weight: 600; }
+.mx-legend { color: var(--muted); font-size: 0.78rem; margin: 0 0 14px; }
+.prov { font-size: 0.7em; vertical-align: middle; margin-right: 5px; }
+.prov-curated { color: var(--good); }
+.prov-auto { color: var(--misleading); }
+.mx-theme { display: block; width: fit-content; font-size: 0.64rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.05em; color: var(--brand-2); background: color-mix(in srgb, var(--brand-2) 14%, transparent); padding: 2px 8px; border-radius: 999px; margin: 0 0 7px; }
 .mx-scroll { overflow-x: auto; border: 1px solid var(--line); border-radius: var(--radius); box-shadow: var(--shadow); }
 .mx-table { width: 100%; border-collapse: collapse; min-width: 860px; font-size: 0.9rem; }
 .mx-table thead th {

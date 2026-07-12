@@ -36,8 +36,10 @@ const ROLE_MAP = {
 };
 function roleCat(r) {
   const s = r.toLowerCase();
+  if (/first lady/.test(s)) return "First Lady";
   if (/vice president/.test(s)) return "Vice President";
   if (/president|governor.*(candidate|nominee)/.test(s)) return "President / Candidate";
+  if (/governor/.test(s)) return "Governor";
   if (/attorney general/.test(s)) return "Attorney General";
   if (/press secretary/.test(s)) return "Press Secretary";
   if (/national security|nsc/.test(s)) return "National Security";
@@ -80,6 +82,9 @@ function norm(e) {
     topic: decode(e.topic).trim(),
     tag: (e.tag || "").trim(),
     theme: theme(decode(e.topic), decode(e.summary), (e.tag || "").trim()),
+    // provenance: "curated" (hand-reviewed & source-checked) is preserved; anything
+    // else — e.g. rows added by the scheduled refresh without this field — is "auto".
+    origin: e.origin === "curated" ? "curated" : "auto",
     summary: decode(e.summary).trim(),
     source: { name: decode(e.source && e.source.name).trim(), url: (e.source && e.source.url || "").trim() },
   };
