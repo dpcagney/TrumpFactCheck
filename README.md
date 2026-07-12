@@ -62,8 +62,13 @@ All content lives in `assets/js/data.js`:
 - `ENTRIES` — the Matrix. Add `{ date, dateText, person, role, admin, party, topic,
   tag, summary, source }`. `date` is ISO (`YYYY-MM-DD`) for sorting; `dateText` is the
   human label shown. `tag` is one of `False | Misleading | Needs Context |
-  Broken Promise | Scandal | Gaffe | Overreach`. Role/administration filters populate
-  themselves from the data.
+  Broken Promise | Scandal | Gaffe | Overreach`. You don't need to set `roleCat` or
+  `theme` by hand — run `node normalize-entries.js` and they're computed for you
+  (it also decodes stray HTML entities, de-dupes by person+date, and re-sorts).
+  `roleCat` drives the Role filter's ~11 buckets; `theme` drives the per-row
+  "History rhymes" reveal. Role/administration filters populate from the data.
+
+After editing entries: `node normalize-entries.js && node build-standalone.js`.
 - `TIMELINE` — add `{ year, president, event }`.
 - `PERSPECTIVES` — add a reassuring, factual one-liner.
 
