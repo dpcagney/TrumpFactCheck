@@ -192,6 +192,23 @@
   /* ---------- matrix ---------- */
   const TAG_CLASS = (t) => t.toLowerCase().replace(/[^a-z]+/g, "-").replace(/^-|-$/g, "");
   const mx = { q: "", role: "all", admin: "all", tag: "all", sort: "date-desc" };
+  let THEME_MAP = {};
+  const shortSum = (s) => (s.length > 150 ? s.slice(0, 147).replace(/\s+\S*$/, "") + "…" : s);
+
+  function rhymesHTML(e) {
+    const others = (THEME_MAP[e.theme] || []).filter((x) => x !== e);
+    if (!others.length) return `<div class="mx-rhymes"><div class="mx-rhymes-h">No close parallels in the dataset yet.</div></div>`;
+    const items = others
+      .map(
+        (o) => `<li>
+          <span class="r-date">${esc(o.dateText)}</span>
+          <span class="r-who">${esc(o.person)} · <span class="r-admin">${esc(o.admin)}</span></span>
+          <span class="r-sum">${esc(shortSum(o.summary))} <a class="source-link" href="${esc(o.source.url)}" target="_blank" rel="noopener noreferrer">↗ ${esc(o.source.name)}</a></span>
+        </li>`
+      )
+      .join("");
+    return `<div class="mx-rhymes"><div class="mx-rhymes-h">📜 History rhymes — other “${esc(e.theme)}” episodes (${others.length}) across the administrations:</div><ul class="mx-rhymes-list">${items}</ul></div>`;
+  }
 
   function uniqSorted(arr) {
     return Array.from(new Set(arr)).sort((a, b) => a.localeCompare(b));
@@ -208,7 +225,7 @@
       if (mx.admin !== "all" && e.admin !== mx.admin) return false;
       if (mx.tag !== "all" && e.tag !== mx.tag) return false;
       if (mx.q) {
-        const hay = (e.person + " " + e.role + " " + e.admin + " " + e.topic + " " + e.summary + " " + e.tag).toLowerCase();
+        const hay = (e.person + " " + e.role + " " + e.admin + " " + e.topic + " " + e.theme + " " + e.summary + " " + e.tag).toLowerCase();
         if (!hay.includes(mx.q)) return false;
       }
       return true;
@@ -225,14 +242,15 @@
     $("#mxBody").innerHTML = rows
       .map(
         (e) => `
-      <tr>
-        <td class="mx-date">${esc(e.dateText)}</td>
+      <tr class="mx-row">
+        <td class="mx-date"><span class="mx-caret">▸</span>${esc(e.dateText)}</td>
         <td class="mx-person">${esc(e.person)}</td>
         <td class="mx-role">${esc(e.role)}</td>
         <td class="mx-admin">${esc(e.admin)}</td>
         <td class="mx-what">${esc(e.summary)}<span class="mx-src"><a href="${esc(e.source.url)}" target="_blank" rel="noopener noreferrer">↗ ${esc(e.source.name)}</a></span></td>
         <td><span class="badge ${TAG_CLASS(e.tag)}">${esc(e.tag)}</span></td>
-      </tr>`
+      </tr>
+      <tr class="mx-detail" hidden><td colspan="6">${rhymesHTML(e)}</td></tr>`
       )
       .join("");
 
@@ -257,6 +275,22 @@
 
   function initMatrix() {
     if (typeof ENTRIES === "undefined" || !$("#mxBody")) return;
+    // group entries by theme (sorted by date) to power the "history rhymes" reveal
+    THEME_MAP = {};
+    ENTRIES.forEach((e) => { (THEME_MAP[e.theme] = THEME_MAP[e.theme] || []).push(e); });
+    Object.values(THEME_MAP).forEach((arr) => arr.sort((a, b) => a.date.localeCompare(b.date)));
+    // expand/collapse a row to reveal its rhymes (ignore clicks on links)
+    $("#mxBody").addEventListener("click", (ev) => {
+      if (ev.target.closest("a")) return;
+      const row = ev.target.closest("tr.mx-row");
+      if (!row) return;
+      const detail = row.nextElementSibling;
+      if (detail && detail.classList.contains("mx-detail")) {
+        const willOpen = detail.hidden;
+        detail.hidden = !willOpen;
+        row.classList.toggle("is-open", willOpen);
+      }
+    });
     // administrations ordered chronologically by their earliest entry
     const adminFirst = {};
     ENTRIES.forEach((e) => { if (!(e.admin in adminFirst) || e.date < adminFirst[e.admin]) adminFirst[e.admin] = e.date; });
