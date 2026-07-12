@@ -189,10 +189,102 @@
     }
   }
 
+  /* ---------- matrix ---------- */
+  const TAG_CLASS = (t) => t.toLowerCase().replace(/[^a-z]+/g, "-").replace(/^-|-$/g, "");
+  const mx = { q: "", role: "all", admin: "all", tag: "all", sort: "date-desc" };
+
+  function uniqSorted(arr) {
+    return Array.from(new Set(arr)).sort((a, b) => a.localeCompare(b));
+  }
+  function fillSelect(sel, values, allLabel) {
+    sel.innerHTML =
+      `<option value="all">${esc(allLabel)}</option>` +
+      values.map((v) => `<option value="${esc(v)}">${esc(v)}</option>`).join("");
+  }
+
+  function renderMatrix() {
+    const rows = ENTRIES.filter((e) => {
+      if (mx.role !== "all" && e.role !== mx.role) return false;
+      if (mx.admin !== "all" && e.admin !== mx.admin) return false;
+      if (mx.tag !== "all" && e.tag !== mx.tag) return false;
+      if (mx.q) {
+        const hay = (e.person + " " + e.role + " " + e.admin + " " + e.topic + " " + e.summary + " " + e.tag).toLowerCase();
+        if (!hay.includes(mx.q)) return false;
+      }
+      return true;
+    });
+
+    const [key, dir] = mx.sort.split("-");
+    const field = { date: "date", person: "person", admin: "admin" }[key] || "date";
+    rows.sort((a, b) => {
+      const av = a[field], bv = b[field];
+      const cmp = field === "date" ? av.localeCompare(bv) : av.localeCompare(bv);
+      return dir === "asc" ? cmp : -cmp;
+    });
+
+    $("#mxBody").innerHTML = rows
+      .map(
+        (e) => `
+      <tr>
+        <td class="mx-date">${esc(e.dateText)}</td>
+        <td class="mx-person">${esc(e.person)}</td>
+        <td class="mx-role">${esc(e.role)}</td>
+        <td class="mx-admin">${esc(e.admin)}</td>
+        <td class="mx-what">${esc(e.summary)}<span class="mx-src"><a href="${esc(e.source.url)}" target="_blank" rel="noopener noreferrer">↗ ${esc(e.source.name)}</a></span></td>
+        <td><span class="badge ${TAG_CLASS(e.tag)}">${esc(e.tag)}</span></td>
+      </tr>`
+      )
+      .join("");
+
+    $("#mxCount").textContent = `Showing ${rows.length} of ${ENTRIES.length} entries`;
+    $("#mxNone").hidden = rows.length !== 0;
+    updateSortIndicators();
+  }
+
+  function updateSortIndicators() {
+    const [key, dir] = mx.sort.split("-");
+    $$(".mx-table th.sortable").forEach((th) => {
+      const ar = th.querySelector(".th-ar");
+      if (th.dataset.sort === key) {
+        th.setAttribute("aria-sort", dir === "asc" ? "ascending" : "descending");
+        ar.textContent = dir === "asc" ? "↑" : "↓";
+      } else {
+        th.removeAttribute("aria-sort");
+        ar.textContent = "";
+      }
+    });
+  }
+
+  function initMatrix() {
+    if (typeof ENTRIES === "undefined" || !$("#mxBody")) return;
+    fillSelect($("#mxRole"), uniqSorted(ENTRIES.map((e) => e.role)), "All roles");
+    fillSelect($("#mxAdmin"), uniqSorted(ENTRIES.map((e) => e.admin)), "All administrations");
+    fillSelect($("#mxTag"), uniqSorted(ENTRIES.map((e) => e.tag)), "All verdicts");
+
+    $("#mxSearch").addEventListener("input", (e) => { mx.q = e.target.value.trim().toLowerCase(); renderMatrix(); });
+    $("#mxRole").addEventListener("change", (e) => { mx.role = e.target.value; renderMatrix(); });
+    $("#mxAdmin").addEventListener("change", (e) => { mx.admin = e.target.value; renderMatrix(); });
+    $("#mxTag").addEventListener("change", (e) => { mx.tag = e.target.value; renderMatrix(); });
+    $("#mxSort").addEventListener("change", (e) => { mx.sort = e.target.value; renderMatrix(); });
+
+    $$(".mx-table th.sortable").forEach((th) => {
+      th.addEventListener("click", () => {
+        const k = th.dataset.sort;
+        const [curKey, curDir] = mx.sort.split("-");
+        mx.sort = curKey === k ? `${k}-${curDir === "asc" ? "desc" : "asc"}` : (k === "date" ? "date-desc" : `${k}-asc`);
+        $("#mxSort").value = mx.sort;
+        renderMatrix();
+      });
+    });
+
+    renderMatrix();
+  }
+
   /* ---------- boot ---------- */
   document.addEventListener("DOMContentLoaded", () => {
     renderCards();
     wireControls();
+    initMatrix();
     renderTimeline();
     initPanic();
     initBreathe();

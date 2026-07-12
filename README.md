@@ -18,6 +18,11 @@ be nutsos after. The republic keeps standing. *This too shall pass.*
 - **History Rhymes** — every fact-check expands into a documented parallel from a
   past president (Adams jailing journalists, Hoover's tariffs, Jackson crying stolen
   election, and more).
+- **The Matrix** — a searchable, filterable, sortable table of documented
+  controversies across *every administration and every role* (presidents, VPs,
+  cabinet secretaries, advisors, staff), each with the date it was said or reported
+  and a reputable source. Filter by role / administration / verdict; sort by date,
+  person, or administration.
 - **Zoom Out timeline** — 240 years of "unprecedented" scandals, all survived.
 - **Panic-o-Meter™** — a deliberately reassuring gauge.
 - **Take a Breath** — a rotating perspective generator.
@@ -54,6 +59,11 @@ All content lives in `assets/js/data.js`:
 - `FACT_CHECKS` — add an object with a `claim`, `verdict`
   (`"false" | "misleading" | "context"`), `summary`, `sources[]`, and a `rhyme`
   (the historical parallel). Keep every source reputable and every parallel real.
+- `ENTRIES` — the Matrix. Add `{ date, dateText, person, role, admin, party, topic,
+  tag, summary, source }`. `date` is ISO (`YYYY-MM-DD`) for sorting; `dateText` is the
+  human label shown. `tag` is one of `False | Misleading | Needs Context |
+  Broken Promise | Scandal | Gaffe | Overreach`. Role/administration filters populate
+  themselves from the data.
 - `TIMELINE` — add `{ year, president, event }`.
 - `PERSPECTIVES` — add a reassuring, factual one-liner.
 

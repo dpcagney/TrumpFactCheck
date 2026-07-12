@@ -18,6 +18,7 @@
     </a>
     <nav class="nav-links">
       <a href="#feed">Fact-Checks</a>
+      <a href="#matrix">The Matrix</a>
       <a href="#timeline">Zoom Out</a>
       <a href="#breathe">Breathe</a>
       <a href="#about">About</a>
@@ -79,6 +80,45 @@
 
     <div id="cards" class="cards"></div>
     <p id="noResults" class="no-results" hidden>No claims match that search. Try another word.</p>
+  </section>
+
+  <!-- ===== MATRIX ===== -->
+  <section id="matrix" class="section">
+    <div class="section-head">
+      <h2>The Matrix: Every Administration, Every Role</h2>
+      <p>Presidents, VPs, cabinet secretaries, and advisors — documented controversies across U.S. history. Search, filter, and sort. The date column is when it was said or reported.</p>
+    </div>
+    <div class="mx-controls">
+      <input id="mxSearch" class="search" type="search" placeholder="Search people, roles, topics…" aria-label="Search the matrix" />
+      <select id="mxRole" class="mx-select" aria-label="Filter by role"></select>
+      <select id="mxAdmin" class="mx-select" aria-label="Filter by administration"></select>
+      <select id="mxTag" class="mx-select" aria-label="Filter by verdict"></select>
+      <select id="mxSort" class="mx-select" aria-label="Sort by">
+        <option value="date-desc">Sort: Newest first</option>
+        <option value="date-asc">Sort: Oldest first</option>
+        <option value="person-asc">Sort: Person A–Z</option>
+        <option value="person-desc">Sort: Person Z–A</option>
+        <option value="admin-asc">Sort: Administration A–Z</option>
+        <option value="admin-desc">Sort: Administration Z–A</option>
+      </select>
+    </div>
+    <p class="mx-count" id="mxCount"></p>
+    <div class="mx-scroll">
+      <table class="mx-table">
+        <thead>
+          <tr>
+            <th data-sort="date" class="sortable"><span class="th-lbl">Date</span><span class="th-ar"></span></th>
+            <th data-sort="person" class="sortable"><span class="th-lbl">Person</span><span class="th-ar"></span></th>
+            <th>Role</th>
+            <th data-sort="admin" class="sortable"><span class="th-lbl">Administration</span><span class="th-ar"></span></th>
+            <th>What happened</th>
+            <th>Verdict</th>
+          </tr>
+        </thead>
+        <tbody id="mxBody"></tbody>
+      </table>
+    </div>
+    <p id="mxNone" class="no-results" hidden>No entries match. Try clearing a filter.</p>
   </section>
 
   <!-- ===== TIMELINE ===== -->
