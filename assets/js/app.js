@@ -204,7 +204,7 @@
 
   function renderMatrix() {
     const rows = ENTRIES.filter((e) => {
-      if (mx.role !== "all" && e.role !== mx.role) return false;
+      if (mx.role !== "all" && e.roleCat !== mx.role) return false;
       if (mx.admin !== "all" && e.admin !== mx.admin) return false;
       if (mx.tag !== "all" && e.tag !== mx.tag) return false;
       if (mx.q) {
@@ -257,8 +257,12 @@
 
   function initMatrix() {
     if (typeof ENTRIES === "undefined" || !$("#mxBody")) return;
-    fillSelect($("#mxRole"), uniqSorted(ENTRIES.map((e) => e.role)), "All roles");
-    fillSelect($("#mxAdmin"), uniqSorted(ENTRIES.map((e) => e.admin)), "All administrations");
+    // administrations ordered chronologically by their earliest entry
+    const adminFirst = {};
+    ENTRIES.forEach((e) => { if (!(e.admin in adminFirst) || e.date < adminFirst[e.admin]) adminFirst[e.admin] = e.date; });
+    const admins = [...new Set(ENTRIES.map((e) => e.admin))].sort((a, b) => adminFirst[a].localeCompare(adminFirst[b]));
+    fillSelect($("#mxRole"), uniqSorted(ENTRIES.map((e) => e.roleCat)), "All roles");
+    fillSelect($("#mxAdmin"), admins, "All administrations");
     fillSelect($("#mxTag"), uniqSorted(ENTRIES.map((e) => e.tag)), "All verdicts");
 
     $("#mxSearch").addEventListener("input", (e) => { mx.q = e.target.value.trim().toLowerCase(); renderMatrix(); });
