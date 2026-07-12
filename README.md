@@ -67,6 +67,17 @@ All content lives in `assets/js/data.js`:
 - `TIMELINE` — add `{ year, president, event }`.
 - `PERSPECTIVES` — add a reassuring, factual one-liner.
 
+## The standalone build
+
+`standalone.html` is a single self-contained page (all CSS/JS inlined) generated
+from the source files. It's what gets published as the shareable preview, so the
+live site and the preview share one source of truth. After editing anything under
+`assets/`, regenerate it:
+
+```bash
+node build-standalone.js   # writes standalone.html
+```
+
 ## A note on accuracy
 
 This is an educational and editorial project. Verdicts summarize reporting from the
