@@ -16,14 +16,29 @@
 const fs = require("fs");
 const dataPath = require("path").join(__dirname, "assets/js/data.js");
 
-const text = fs.readFileSync(dataPath, "utf8");
+const TODAY = new Date().toISOString().slice(0, 10); // date this normalizer runs = "added to site" date for new rows
+let text = fs.readFileSync(dataPath, "utf8");
+
+// Stamp `added` on the featured FACT_CHECKS cards too (preserve existing; default TODAY).
+{
+  const s = text.indexOf("const FACT_CHECKS = [");
+  if (s >= 0) {
+    const aStart = text.indexOf("[", s);
+    const aEnd = text.indexOf("\n];", s) + 2; // index of the ";"
+    const fcs = eval(text.slice(aStart, aEnd));
+    let stamped = 0;
+    fcs.forEach((fc) => { if (!/^\d{4}-\d{2}-\d{2}$/.test(fc.added || "")) { fc.added = TODAY; stamped++; } });
+    text = text.slice(0, s) + "const FACT_CHECKS = " + JSON.stringify(fcs, null, 2) + ";" + text.slice(aEnd + 1);
+    if (stamped) console.log(`Stamped 'added' on ${stamped} new fact-check card(s).`);
+  }
+}
+
 const marker = "const ENTRIES = ";
 const idx = text.indexOf(marker);
 if (idx < 0) throw new Error("ENTRIES not found in data.js");
 const entries = eval(text.slice(idx + marker.length).replace(/;\s*$/, ""));
 const head = text.slice(0, idx).replace(/\s*$/, "") + "\n\n";
 
-const TODAY = new Date().toISOString().slice(0, 10); // date this normalizer runs = "added to site" date for new rows
 const ALLOWED = new Set(["False", "Misleading", "Needs Context", "Broken Promise", "Scandal", "Gaffe", "Overreach"]);
 const decode = (s) => String(s == null ? "" : s)
   .replace(/&amp;/g, "&").replace(/&lt;/g, "<").replace(/&gt;/g, ">")

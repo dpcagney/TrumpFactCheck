@@ -47,6 +47,7 @@
           <span class="topic">${esc(fc.topic)}</span>
         </div>
         <p class="claim">${esc(fc.claim)}</p>
+        ${fc.dateText || fc.added ? `<p class="card-dates">${fc.dateText ? `Said <b>${esc(fc.dateText)}</b>` : ""}${fc.dateText && fc.added ? " · " : ""}${fc.added ? `Added <b>${esc(fmtAdded(fc.added))}</b>` : ""}</p>` : ""}
         <p class="card-summary">${esc(fc.summary)}</p>
         <div class="sources">
           <span class="sources-label">Sources</span>

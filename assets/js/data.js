@@ -15,227 +15,346 @@
 
 const FACT_CHECKS = [
   {
-    id: "prices-2025",
-    claim: "“We've ended inflation… prices are down. Eggs are down 50, 60, 70 percent.”",
-    topic: "Economy",
-    verdict: "misleading",
-    summary:
-      "It's a mix. Wholesale egg prices did fall sharply in early 2025 as an avian-flu spike eased, and by late 2025 retail eggs were well below their January peak — but overall inflation (headline CPI) rose during Trump's first year back, so “ended” overstates it. Economists credit the bird-flu cycle, not policy, for the egg swings.",
-    sources: [
-      { name: "FactCheck.org — “Are Prices Up or Down?” (July 2025)", url: "https://www.factcheck.org/2025/07/are-prices-up-or-down-parsing-misleading-claims-by-trump-and-democrats/" },
-      { name: "PolitiFact — fact-checking the egg-price claim (Apr 2025)", url: "https://www.politifact.com/factchecks/2025/apr/04/donald-trump/fact-checking-trumps-statement-about-declining-egg/" },
-      { name: "PolitiFact — inflation after one year under Trump (Jan 2026)", url: "https://www.politifact.com/article/2026/jan/20/trump-inflation-one-year-groceries-cars-prices/" }
+    "id": "prices-2025",
+    "claim": "“We've ended inflation… prices are down. Eggs are down 50, 60, 70 percent.”",
+    "topic": "Economy",
+    "verdict": "misleading",
+    "summary": "It's a mix. Wholesale egg prices did fall sharply in early 2025 as an avian-flu spike eased, and by late 2025 retail eggs were well below their January peak — but overall inflation (headline CPI) rose during Trump's first year back, so “ended” overstates it. Economists credit the bird-flu cycle, not policy, for the egg swings.",
+    "sources": [
+      {
+        "name": "FactCheck.org — “Are Prices Up or Down?” (July 2025)",
+        "url": "https://www.factcheck.org/2025/07/are-prices-up-or-down-parsing-misleading-claims-by-trump-and-democrats/"
+      },
+      {
+        "name": "PolitiFact — fact-checking the egg-price claim (Apr 2025)",
+        "url": "https://www.politifact.com/factchecks/2025/apr/04/donald-trump/fact-checking-trumps-statement-about-declining-egg/"
+      },
+      {
+        "name": "PolitiFact — inflation after one year under Trump (Jan 2026)",
+        "url": "https://www.politifact.com/article/2026/jan/20/trump-inflation-one-year-groceries-cars-prices/"
+      }
     ],
-    rhyme: {
-      president: "Richard Nixon",
-      year: "1971",
-      title: "Wage and Price Controls",
-      text:
-        "Presidents get outsized blame and credit for prices they mostly don't control in the short run. In August 1971 Richard Nixon tried to freeze wages and prices by executive order to kill inflation. It was wildly popular at first — and failed within two years, producing shortages and distortions before inflation roared back worse than before. Overpromising on prices is a bipartisan presidential tradition.",
-      source: { name: "Federal Reserve History — “The Great Inflation”", url: "https://www.federalreservehistory.org/essays/great-inflation" }
-    }
+    "rhyme": {
+      "president": "Richard Nixon",
+      "year": "1971",
+      "title": "Wage and Price Controls",
+      "text": "Presidents get outsized blame and credit for prices they mostly don't control in the short run. In August 1971 Richard Nixon tried to freeze wages and prices by executive order to kill inflation. It was wildly popular at first — and failed within two years, producing shortages and distortions before inflation roared back worse than before. Overpromising on prices is a bipartisan presidential tradition.",
+      "source": {
+        "name": "Federal Reserve History — “The Great Inflation”",
+        "url": "https://www.federalreservehistory.org/essays/great-inflation"
+      }
+    },
+    "date": "2025-04-01",
+    "dateText": "2025",
+    "added": "2026-07-15"
   },
   {
-    id: "tylenol-autism",
-    claim: "“Don't take Tylenol… taking it during pregnancy is linked to autism.”",
-    topic: "Science",
-    verdict: "false",
-    summary:
-      "No study has shown acetaminophen (Tylenol) causes autism — decades of research show, at most, an unproven association, and several studies show none. The American College of Obstetricians and Gynecologists and the American Academy of Pediatrics warn that untreated fever or pain in pregnancy carries real risks, so telling women to “tough it out” can itself do harm.",
-    sources: [
-      { name: "FactCheck.org — Tylenol and autism claims (Sept 2025)", url: "https://www.factcheck.org/2025/09/trump-administrations-problematic-claims-on-tylenol-and-autism/" },
-      { name: "NPR — the science doesn't back it up", url: "https://www.npr.org/sections/shots-health-news/2025/09/22/nx-s1-5550153/trump-rfk-autism-tylenol-leucovorin-pregnancy" },
-      { name: "PolitiFact — Tylenol, autism and vaccine claims", url: "https://www.politifact.com/article/2025/sep/23/autism-tylenol-announcement-vaccine-claims/" }
+    "id": "tylenol-autism",
+    "claim": "“Don't take Tylenol… taking it during pregnancy is linked to autism.”",
+    "topic": "Science",
+    "verdict": "false",
+    "summary": "No study has shown acetaminophen (Tylenol) causes autism — decades of research show, at most, an unproven association, and several studies show none. The American College of Obstetricians and Gynecologists and the American Academy of Pediatrics warn that untreated fever or pain in pregnancy carries real risks, so telling women to “tough it out” can itself do harm.",
+    "sources": [
+      {
+        "name": "FactCheck.org — Tylenol and autism claims (Sept 2025)",
+        "url": "https://www.factcheck.org/2025/09/trump-administrations-problematic-claims-on-tylenol-and-autism/"
+      },
+      {
+        "name": "NPR — the science doesn't back it up",
+        "url": "https://www.npr.org/sections/shots-health-news/2025/09/22/nx-s1-5550153/trump-rfk-autism-tylenol-leucovorin-pregnancy"
+      },
+      {
+        "name": "PolitiFact — Tylenol, autism and vaccine claims",
+        "url": "https://www.politifact.com/article/2025/sep/23/autism-tylenol-announcement-vaccine-claims/"
+      }
     ],
-    rhyme: {
-      president: "Gerald Ford",
-      year: "1976",
-      title: "The Swine Flu Vaccination Fiasco",
-      text:
-        "Health misjudgment at the top isn't partisan or new. In 1976, fearing a pandemic, the Ford administration rushed to vaccinate the entire country against swine flu — more than 40 million people in a few months. The pandemic never came, the shot was tied to a rare paralytic side effect, and the program was halted. Government getting the science wrong — in either direction — is old, and the institutions course-correct.",
-      source: { name: "Gerald R. Ford Presidential Library", url: "https://www.fordlibrarymuseum.gov/digital-research-room/topic-guides/swine-flu-immunization-program-1976" }
-    }
+    "rhyme": {
+      "president": "Gerald Ford",
+      "year": "1976",
+      "title": "The Swine Flu Vaccination Fiasco",
+      "text": "Health misjudgment at the top isn't partisan or new. In 1976, fearing a pandemic, the Ford administration rushed to vaccinate the entire country against swine flu — more than 40 million people in a few months. The pandemic never came, the shot was tied to a rare paralytic side effect, and the program was halted. Government getting the science wrong — in either direction — is old, and the institutions course-correct.",
+      "source": {
+        "name": "Gerald R. Ford Presidential Library",
+        "url": "https://www.fordlibrarymuseum.gov/digital-research-room/topic-guides/swine-flu-immunization-program-1976"
+      }
+    },
+    "date": "2025-09-22",
+    "dateText": "Sep 2025",
+    "added": "2026-07-15"
   },
   {
-    id: "tariff-revenue-2025",
-    claim: "“We're taking in $2 billion a day in tariffs — $88 billion in just two months.”",
-    topic: "Economy",
-    verdict: "false",
-    summary:
-      "Treasury data showed tariff collections running well below those figures — the $88 billion claim was more than double the actual two-month total, and trade experts said “$2 billion a day” wasn't supported. And because tariffs are paid by U.S. importers, this “revenue” is largely a tax on Americans, not a check from abroad.",
-    sources: [
-      { name: "PolitiFact — “almost $2 billion a day” (Apr 2025)", url: "https://www.politifact.com/factchecks/2025/apr/10/donald-trump/fact-check-trump-said-tariffs-collections-are-almo/" },
-      { name: "FactCheck.org — recapping deceptive tariff claims (Aug 2025)", url: "https://www.factcheck.org/2025/08/recapping-trumps-deceptive-tariff-claims/" }
+    "id": "tariff-revenue-2025",
+    "claim": "“We're taking in $2 billion a day in tariffs — $88 billion in just two months.”",
+    "topic": "Economy",
+    "verdict": "false",
+    "summary": "Treasury data showed tariff collections running well below those figures — the $88 billion claim was more than double the actual two-month total, and trade experts said “$2 billion a day” wasn't supported. And because tariffs are paid by U.S. importers, this “revenue” is largely a tax on Americans, not a check from abroad.",
+    "sources": [
+      {
+        "name": "PolitiFact — “almost $2 billion a day” (Apr 2025)",
+        "url": "https://www.politifact.com/factchecks/2025/apr/10/donald-trump/fact-check-trump-said-tariffs-collections-are-almo/"
+      },
+      {
+        "name": "FactCheck.org — recapping deceptive tariff claims (Aug 2025)",
+        "url": "https://www.factcheck.org/2025/08/recapping-trumps-deceptive-tariff-claims/"
+      }
     ],
-    rhyme: {
-      president: "William McKinley",
-      year: "1890",
-      title: "When tariffs really did fund the government",
-      text:
-        "There's a grain of history here. Before the federal income tax, tariffs were the main source of federal revenue — over half of it — and Rep. William McKinley built a career on the 1890 tariff that bears his name. But the country deliberately moved to an income tax (ratified 1913) because tariffs are a regressive, volatile way to fund a modern government, and the McKinley Tariff's own unpopularity helped drive that shift. The nostalgia is real; the modern math isn't.",
-      source: { name: "U.S. House of Representatives — “The McKinley Tariff of 1890”", url: "https://history.house.gov/Historical-Highlights/1851-1900/The-McKinley-Tariff-of-1890/" }
-    }
+    "rhyme": {
+      "president": "William McKinley",
+      "year": "1890",
+      "title": "When tariffs really did fund the government",
+      "text": "There's a grain of history here. Before the federal income tax, tariffs were the main source of federal revenue — over half of it — and Rep. William McKinley built a career on the 1890 tariff that bears his name. But the country deliberately moved to an income tax (ratified 1913) because tariffs are a regressive, volatile way to fund a modern government, and the McKinley Tariff's own unpopularity helped drive that shift. The nostalgia is real; the modern math isn't.",
+      "source": {
+        "name": "U.S. House of Representatives — “The McKinley Tariff of 1890”",
+        "url": "https://history.house.gov/Historical-Highlights/1851-1900/The-McKinley-Tariff-of-1890/"
+      }
+    },
+    "date": "2025-04-10",
+    "dateText": "Apr 2025",
+    "added": "2026-07-15"
   },
   {
-    id: "election-2020",
-    claim: "“The 2020 election was rigged and stolen.”",
-    topic: "Elections",
-    verdict: "false",
-    summary:
-      "There is no evidence of fraud that would have changed the 2020 result. More than 60 lawsuits were rejected, Trump's own DOJ found no widespread fraud, and federal cybersecurity officials called it “the most secure in American history.”",
-    sources: [
-      { name: "AP investigation of every disputed swing-state ballot", url: "https://apnews.com/article/voter-fraud-election-2020-joe-biden-donald-trump-7fcb6f134e528fee8237c7601db3328f" },
-      { name: "CISA / DHS joint statement", url: "https://www.cisa.gov/news-events/news/joint-statement-elections-infrastructure-government-coordinating-council-election" },
-      { name: "AG William Barr: no fraud on a scale that could change the outcome (AP)", url: "https://apnews.com/article/barr-no-widespread-election-fraud-b1f1488796c9a98c4b1a9061a6c7f49d" }
+    "id": "election-2020",
+    "claim": "“The 2020 election was rigged and stolen.”",
+    "topic": "Elections",
+    "verdict": "false",
+    "summary": "There is no evidence of fraud that would have changed the 2020 result. More than 60 lawsuits were rejected, Trump's own DOJ found no widespread fraud, and federal cybersecurity officials called it “the most secure in American history.”",
+    "sources": [
+      {
+        "name": "AP investigation of every disputed swing-state ballot",
+        "url": "https://apnews.com/article/voter-fraud-election-2020-joe-biden-donald-trump-7fcb6f134e528fee8237c7601db3328f"
+      },
+      {
+        "name": "CISA / DHS joint statement",
+        "url": "https://www.cisa.gov/news-events/news/joint-statement-elections-infrastructure-government-coordinating-council-election"
+      },
+      {
+        "name": "AG William Barr: no fraud on a scale that could change the outcome (AP)",
+        "url": "https://apnews.com/article/barr-no-widespread-election-fraud-b1f1488796c9a98c4b1a9061a6c7f49d"
+      }
     ],
-    rhyme: {
-      president: "Andrew Jackson",
-      year: "1824–1825",
-      title: "The “Corrupt Bargain”",
-      text:
-        "After losing the 1824 election in the House of Representatives, Andrew Jackson spent four years insisting the presidency had been stolen from him through a “corrupt bargain” between John Quincy Adams and Henry Clay. He ran again in 1828 on that grievance — and won. Disputed, contested, and litigated elections (1800, 1824, 1876, 2000) are a recurring feature of the republic, not the end of it.",
-      source: { name: "U.S. Senate Historical Office", url: "https://www.senate.gov/artandhistory/history/minute/A_Corrupt_Bargain.htm" }
-    }
+    "rhyme": {
+      "president": "Andrew Jackson",
+      "year": "1824–1825",
+      "title": "The “Corrupt Bargain”",
+      "text": "After losing the 1824 election in the House of Representatives, Andrew Jackson spent four years insisting the presidency had been stolen from him through a “corrupt bargain” between John Quincy Adams and Henry Clay. He ran again in 1828 on that grievance — and won. Disputed, contested, and litigated elections (1800, 1824, 1876, 2000) are a recurring feature of the republic, not the end of it.",
+      "source": {
+        "name": "U.S. Senate Historical Office",
+        "url": "https://www.senate.gov/artandhistory/history/minute/A_Corrupt_Bargain.htm"
+      }
+    },
+    "date": "2020-11-07",
+    "dateText": "Nov 2020",
+    "added": "2026-07-15"
   },
   {
-    id: "inauguration-crowd",
-    claim: "“This was the largest audience to ever witness an inauguration — period.”",
-    topic: "Self-image",
-    verdict: "false",
-    summary:
-      "Side-by-side photos from the same vantage point show Trump's 2017 crowd was visibly smaller than Obama's 2009 crowd. Metro ridership and aerial imagery confirm it.",
-    sources: [
-      { name: "PolitiFact analysis", url: "https://www.politifact.com/factchecks/2017/jan/22/sean-spicer/sean-spicer-said-trump-had-largest-inauguration-cr/" },
-      { name: "Reuters / aerial photo comparison", url: "https://www.reuters.com/article/us-usa-trump-inauguration-crowd-idUSKBN15702N" }
+    "id": "inauguration-crowd",
+    "claim": "“This was the largest audience to ever witness an inauguration — period.”",
+    "topic": "Self-image",
+    "verdict": "false",
+    "summary": "Side-by-side photos from the same vantage point show Trump's 2017 crowd was visibly smaller than Obama's 2009 crowd. Metro ridership and aerial imagery confirm it.",
+    "sources": [
+      {
+        "name": "PolitiFact analysis",
+        "url": "https://www.politifact.com/factchecks/2017/jan/22/sean-spicer/sean-spicer-said-trump-had-largest-inauguration-cr/"
+      },
+      {
+        "name": "Reuters / aerial photo comparison",
+        "url": "https://www.reuters.com/article/us-usa-trump-inauguration-crowd-idUSKBN15702N"
+      }
     ],
-    rhyme: {
-      president: "Theodore Roosevelt",
-      year: "1901–1909",
-      title: "“The bride at every wedding”",
-      text:
-        "Presidential vanity is nothing new. Theodore Roosevelt's own daughter Alice quipped that her father “wanted to be the bride at every wedding and the corpse at every funeral.” Lyndon Johnson gave interviews from the toilet to keep aides' attention on him. A president who needs to be the biggest and best in the room is a very old American character.",
-      source: { name: "The Atlantic on TR's ego", url: "https://www.theatlantic.com/magazine/archive/2003/06/the-making-of-a-president/302761/" }
-    }
+    "rhyme": {
+      "president": "Theodore Roosevelt",
+      "year": "1901–1909",
+      "title": "“The bride at every wedding”",
+      "text": "Presidential vanity is nothing new. Theodore Roosevelt's own daughter Alice quipped that her father “wanted to be the bride at every wedding and the corpse at every funeral.” Lyndon Johnson gave interviews from the toilet to keep aides' attention on him. A president who needs to be the biggest and best in the room is a very old American character.",
+      "source": {
+        "name": "The Atlantic on TR's ego",
+        "url": "https://www.theatlantic.com/magazine/archive/2003/06/the-making-of-a-president/302761/"
+      }
+    },
+    "date": "2017-01-21",
+    "dateText": "Jan 2017",
+    "added": "2026-07-15"
   },
   {
-    id: "tariffs-china-pays",
-    claim: "“China is paying us billions of dollars in tariffs. They pay, not us.”",
-    topic: "Economy",
-    verdict: "misleading",
-    summary:
-      "Tariffs are taxes paid by U.S. importers, and studies found the cost was passed almost entirely to American businesses and consumers — not paid by China.",
-    sources: [
-      { name: "Federal Reserve / peer-reviewed study (FactCheck.org)", url: "https://www.factcheck.org/2018/09/the-facts-on-trumps-tariffs/" },
-      { name: "Tax Foundation analysis", url: "https://taxfoundation.org/research/all/federal/trump-tariffs-biden-tariffs/" }
+    "id": "tariffs-china-pays",
+    "claim": "“China is paying us billions of dollars in tariffs. They pay, not us.”",
+    "topic": "Economy",
+    "verdict": "misleading",
+    "summary": "Tariffs are taxes paid by U.S. importers, and studies found the cost was passed almost entirely to American businesses and consumers — not paid by China.",
+    "sources": [
+      {
+        "name": "Federal Reserve / peer-reviewed study (FactCheck.org)",
+        "url": "https://www.factcheck.org/2018/09/the-facts-on-trumps-tariffs/"
+      },
+      {
+        "name": "Tax Foundation analysis",
+        "url": "https://taxfoundation.org/research/all/federal/trump-tariffs-biden-tariffs/"
+      }
     ],
-    rhyme: {
-      president: "Herbert Hoover",
-      year: "1930",
-      title: "The Smoot–Hawley Tariff",
-      text:
-        "In 1930, over a petition signed by 1,028 economists begging him not to, Herbert Hoover signed the Smoot–Hawley Tariff, raising duties on thousands of goods. Trading partners retaliated, global trade collapsed, and it deepened the Great Depression. Tariff enthusiasm — and the belief that foreigners rather than your own consumers foot the bill — is a very old American economic fever.",
-      source: { name: "U.S. State Dept. Office of the Historian", url: "https://history.state.gov/milestones/1921-1936/protectionism" }
-    }
+    "rhyme": {
+      "president": "Herbert Hoover",
+      "year": "1930",
+      "title": "The Smoot–Hawley Tariff",
+      "text": "In 1930, over a petition signed by 1,028 economists begging him not to, Herbert Hoover signed the Smoot–Hawley Tariff, raising duties on thousands of goods. Trading partners retaliated, global trade collapsed, and it deepened the Great Depression. Tariff enthusiasm — and the belief that foreigners rather than your own consumers foot the bill — is a very old American economic fever.",
+      "source": {
+        "name": "U.S. State Dept. Office of the Historian",
+        "url": "https://history.state.gov/milestones/1921-1936/protectionism"
+      }
+    },
+    "date": "2018-09-01",
+    "dateText": "2018–2019",
+    "added": "2026-07-15"
   },
   {
-    id: "windmills-cancer",
-    claim: "“The noise from windmills causes cancer.”",
-    topic: "Science",
-    verdict: "false",
-    summary:
-      "There is no evidence linking wind-turbine noise to cancer. The American Cancer Society said it was unaware of any such link.",
-    sources: [
-      { name: "FactCheck.org", url: "https://www.factcheck.org/2019/04/trumps-hot-air-on-wind-energy/" },
-      { name: "AP News", url: "https://apnews.com/article/donald-trump-us-news-ap-top-news-cancer-health-4a2a4e0e6f6a4c7a9c6b6a7e0e1e2b3c" }
+    "id": "windmills-cancer",
+    "claim": "“The noise from windmills causes cancer.”",
+    "topic": "Science",
+    "verdict": "false",
+    "summary": "There is no evidence linking wind-turbine noise to cancer. The American Cancer Society said it was unaware of any such link.",
+    "sources": [
+      {
+        "name": "FactCheck.org",
+        "url": "https://www.factcheck.org/2019/04/trumps-hot-air-on-wind-energy/"
+      },
+      {
+        "name": "AP News",
+        "url": "https://apnews.com/article/donald-trump-us-news-ap-top-news-cancer-health-4a2a4e0e6f6a4c7a9c6b6a7e0e1e2b3c"
+      }
     ],
-    rhyme: {
-      president: "Ronald Reagan",
-      year: "1981–1989",
-      title: "Astrology in the West Wing",
-      text:
-        "Presidents and pseudoscience have a long history. Nancy and Ronald Reagan consulted an astrologer, Joan Quigley, who helped schedule the president's travel and even summit timing. The point isn't mockery — it's that odd, unscientific beliefs reaching the Oval Office did not break the country. Institutions absorbed it.",
-      source: { name: "History.com", url: "https://www.history.com/news/nancy-reagan-astrology-white-house" }
-    }
+    "rhyme": {
+      "president": "Ronald Reagan",
+      "year": "1981–1989",
+      "title": "Astrology in the West Wing",
+      "text": "Presidents and pseudoscience have a long history. Nancy and Ronald Reagan consulted an astrologer, Joan Quigley, who helped schedule the president's travel and even summit timing. The point isn't mockery — it's that odd, unscientific beliefs reaching the Oval Office did not break the country. Institutions absorbed it.",
+      "source": {
+        "name": "History.com",
+        "url": "https://www.history.com/news/nancy-reagan-astrology-white-house"
+      }
+    },
+    "date": "2019-04-02",
+    "dateText": "Apr 2019",
+    "added": "2026-07-15"
   },
   {
-    id: "mexico-wall",
-    claim: "“Mexico will pay for the wall. 100%.”",
-    topic: "Immigration",
-    verdict: "false",
-    summary:
-      "Mexico never paid for any border-wall construction. Funding came from U.S. appropriations and redirected Defense Department money.",
-    sources: [
-      { name: "BBC reality check", url: "https://www.bbc.com/news/world-us-canada-46824649" },
-      { name: "PolitiFact promise tracker", url: "https://www.politifact.com/truth-o-meter/promises/trumpometer/promise/1397/build-wall-and-make-mexico-pay-it/" }
+    "id": "mexico-wall",
+    "claim": "“Mexico will pay for the wall. 100%.”",
+    "topic": "Immigration",
+    "verdict": "false",
+    "summary": "Mexico never paid for any border-wall construction. Funding came from U.S. appropriations and redirected Defense Department money.",
+    "sources": [
+      {
+        "name": "BBC reality check",
+        "url": "https://www.bbc.com/news/world-us-canada-46824649"
+      },
+      {
+        "name": "PolitiFact promise tracker",
+        "url": "https://www.politifact.com/truth-o-meter/promises/trumpometer/promise/1397/build-wall-and-make-mexico-pay-it/"
+      }
     ],
-    rhyme: {
-      president: "Chester A. Arthur / Congress",
-      year: "1882",
-      title: "The Chinese Exclusion Act",
-      text:
-        "Sweeping promises to seal the nation off from a feared group of immigrants are as old as the country. In 1882 Congress passed, and President Arthur signed, the Chinese Exclusion Act — the first U.S. law to ban a nationality outright. The Know-Nothing party of the 1850s ran entire campaigns on anti-immigrant fear. Nativist waves rise and, historically, recede.",
-      source: { name: "U.S. State Dept. Office of the Historian", url: "https://history.state.gov/milestones/1866-1898/chinese-immigration" }
-    }
+    "rhyme": {
+      "president": "Chester A. Arthur / Congress",
+      "year": "1882",
+      "title": "The Chinese Exclusion Act",
+      "text": "Sweeping promises to seal the nation off from a feared group of immigrants are as old as the country. In 1882 Congress passed, and President Arthur signed, the Chinese Exclusion Act — the first U.S. law to ban a nationality outright. The Know-Nothing party of the 1850s ran entire campaigns on anti-immigrant fear. Nativist waves rise and, historically, recede.",
+      "source": {
+        "name": "U.S. State Dept. Office of the Historian",
+        "url": "https://history.state.gov/milestones/1866-1898/chinese-immigration"
+      }
+    },
+    "date": "2016-01-01",
+    "dateText": "2015–2016 (campaign)",
+    "added": "2026-07-15"
   },
   {
-    id: "biggest-tax-cut",
-    claim: "“We passed the biggest tax cut in the history of our country.”",
-    topic: "Economy",
-    verdict: "false",
-    summary:
-      "The 2017 tax cut was large but not the biggest ever, whether measured as a share of GDP or in inflation-adjusted dollars. Reagan's 1981 cut and several others were larger.",
-    sources: [
-      { name: "The Washington Post Fact Checker", url: "https://www.washingtonpost.com/politics/2017/12/20/is-it-the-largest-tax-cut-in-history-nope/" },
-      { name: "Committee for a Responsible Federal Budget", url: "https://www.crfb.org/blogs/how-big-tax-cut" }
+    "id": "biggest-tax-cut",
+    "claim": "“We passed the biggest tax cut in the history of our country.”",
+    "topic": "Economy",
+    "verdict": "false",
+    "summary": "The 2017 tax cut was large but not the biggest ever, whether measured as a share of GDP or in inflation-adjusted dollars. Reagan's 1981 cut and several others were larger.",
+    "sources": [
+      {
+        "name": "The Washington Post Fact Checker",
+        "url": "https://www.washingtonpost.com/politics/2017/12/20/is-it-the-largest-tax-cut-in-history-nope/"
+      },
+      {
+        "name": "Committee for a Responsible Federal Budget",
+        "url": "https://www.crfb.org/blogs/how-big-tax-cut"
+      }
     ],
-    rhyme: {
-      president: "Many presidents",
-      year: "1789–present",
-      title: "“The biggest in history”",
-      text:
-        "Claiming your accomplishment is the biggest, best, or first ever is a bipartisan presidential reflex. Superlatives outrun the record all the time — the historian's job, and a fact-checker's, is simply to check the tape. Exaggeration is a bug of the office, not a sign of collapse.",
-      source: { name: "Poynter / PolitiFact on presidential exaggeration", url: "https://www.poynter.org/fact-checking/" }
-    }
+    "rhyme": {
+      "president": "Many presidents",
+      "year": "1789–present",
+      "title": "“The biggest in history”",
+      "text": "Claiming your accomplishment is the biggest, best, or first ever is a bipartisan presidential reflex. Superlatives outrun the record all the time — the historian's job, and a fact-checker's, is simply to check the tape. Exaggeration is a bug of the office, not a sign of collapse.",
+      "source": {
+        "name": "Poynter / PolitiFact on presidential exaggeration",
+        "url": "https://www.poynter.org/fact-checking/"
+      }
+    },
+    "date": "2017-12-20",
+    "dateText": "Dec 2017",
+    "added": "2026-07-15"
   },
   {
-    id: "press-enemy",
-    claim: "“The FAKE NEWS media… is the enemy of the American People!”",
-    topic: "Press",
-    verdict: "context",
-    summary:
-      "Calling the free press an “enemy of the people” drew rare bipartisan alarm from press-freedom groups. It's an opinion, not a factual claim — but it has a striking historical echo.",
-    sources: [
-      { name: "Committee to Protect Journalists", url: "https://cpj.org/2019/07/trump-press-freedom-tracker-enemy-of-the-people/" },
-      { name: "Reuters", url: "https://www.reuters.com/article/us-usa-trump-media-idUSKBN15V2GT" }
+    "id": "press-enemy",
+    "claim": "“The FAKE NEWS media… is the enemy of the American People!”",
+    "topic": "Press",
+    "verdict": "context",
+    "summary": "Calling the free press an “enemy of the people” drew rare bipartisan alarm from press-freedom groups. It's an opinion, not a factual claim — but it has a striking historical echo.",
+    "sources": [
+      {
+        "name": "Committee to Protect Journalists",
+        "url": "https://cpj.org/2019/07/trump-press-freedom-tracker-enemy-of-the-people/"
+      },
+      {
+        "name": "Reuters",
+        "url": "https://www.reuters.com/article/us-usa-trump-media-idUSKBN15V2GT"
+      }
     ],
-    rhyme: {
-      president: "John Adams",
-      year: "1798",
-      title: "The Alien and Sedition Acts",
-      text:
-        "Presidents feuding with — and even jailing — the press is founding-era old. In 1798 John Adams signed the Sedition Act, under which newspaper editors who criticized the government were actually fined and imprisoned. The public backlash helped sweep Adams out in 1800, and the acts became a byword for overreach. Nixon kept an “enemies list.” The press has outlasted every one of them.",
-      source: { name: "National Constitution Center", url: "https://constitutioncenter.org/blog/how-the-alien-and-sedition-acts-almost-ruined-a-presidency" }
-    }
+    "rhyme": {
+      "president": "John Adams",
+      "year": "1798",
+      "title": "The Alien and Sedition Acts",
+      "text": "Presidents feuding with — and even jailing — the press is founding-era old. In 1798 John Adams signed the Sedition Act, under which newspaper editors who criticized the government were actually fined and imprisoned. The public backlash helped sweep Adams out in 1800, and the acts became a byword for overreach. Nixon kept an “enemies list.” The press has outlasted every one of them.",
+      "source": {
+        "name": "National Constitution Center",
+        "url": "https://constitutioncenter.org/blog/how-the-alien-and-sedition-acts-almost-ruined-a-presidency"
+      }
+    },
+    "date": "2017-02-17",
+    "dateText": "Feb 2017",
+    "added": "2026-07-15"
   },
   {
-    id: "covid-disinfectant",
-    claim: "“And then I see the disinfectant… is there a way we can do something like that, by injection inside?”",
-    topic: "Science",
-    verdict: "context",
-    summary:
-      "Medical experts and disinfectant makers urgently warned that injecting or ingesting disinfectant is dangerous and can be fatal. Trump later said he was being sarcastic.",
-    sources: [
-      { name: "BBC", url: "https://www.bbc.com/news/world-us-canada-52407177" },
-      { name: "FDA warning on ingesting disinfectants", url: "https://www.fda.gov/consumers/consumer-updates/danger-dont-drink-miracle-mineral-solution-or-similar-products" }
+    "id": "covid-disinfectant",
+    "claim": "“And then I see the disinfectant… is there a way we can do something like that, by injection inside?”",
+    "topic": "Science",
+    "verdict": "context",
+    "summary": "Medical experts and disinfectant makers urgently warned that injecting or ingesting disinfectant is dangerous and can be fatal. Trump later said he was being sarcastic.",
+    "sources": [
+      {
+        "name": "BBC",
+        "url": "https://www.bbc.com/news/world-us-canada-52407177"
+      },
+      {
+        "name": "FDA warning on ingesting disinfectants",
+        "url": "https://www.fda.gov/consumers/consumer-updates/danger-dont-drink-miracle-mineral-solution-or-similar-products"
+      }
     ],
-    rhyme: {
-      president: "James A. Garfield's doctors",
-      year: "1881",
-      title: "When official medicine got it dangerously wrong",
-      text:
-        "Dubious medical ideas near the presidency have a long, humbling history. After Garfield was shot in 1881, his own doctors probed the wound with unwashed fingers and killed him with infection — the bullet itself wasn't fatal. George Washington was bled to death by well-meaning physicians. Medical misjudgment at the highest level is old, and the country endured it.",
-      source: { name: "Smithsonian Magazine", url: "https://www.smithsonianmag.com/history/the-fatal-medical-treatment-of-president-james-garfield-180964526/" }
-    }
+    "rhyme": {
+      "president": "James A. Garfield's doctors",
+      "year": "1881",
+      "title": "When official medicine got it dangerously wrong",
+      "text": "Dubious medical ideas near the presidency have a long, humbling history. After Garfield was shot in 1881, his own doctors probed the wound with unwashed fingers and killed him with infection — the bullet itself wasn't fatal. George Washington was bled to death by well-meaning physicians. Medical misjudgment at the highest level is old, and the country endured it.",
+      "source": {
+        "name": "Smithsonian Magazine",
+        "url": "https://www.smithsonianmag.com/history/the-fatal-medical-treatment-of-president-james-garfield-180964526/"
+      }
+    },
+    "date": "2020-04-23",
+    "dateText": "Apr 2020",
+    "added": "2026-07-15"
   }
 ];
 
