@@ -86,7 +86,7 @@
   <section id="matrix" class="section">
     <div class="section-head">
       <h2>The Matrix: Every Administration, Every Role</h2>
-      <p>Presidents, VPs, cabinet secretaries, and advisors — documented controversies across U.S. history. Search, filter, and sort. The date column is when it was said or reported. <strong>Tap any row to see how it rhymes</strong> with the same theme in other administrations.</p>
+      <p>Presidents, VPs, cabinet secretaries, and advisors — documented controversies across U.S. history. Search, filter, and sort. “Date said” is when it was said or reported; “Added” is when it landed on this site. <strong>Tap any row to see how it rhymes</strong> with the same theme in other administrations.</p>
     </div>
     <div class="mx-controls">
       <input id="mxSearch" class="search" type="search" placeholder="Search people, roles, topics…" aria-label="Search the matrix" />
@@ -95,8 +95,10 @@
       <select id="mxTag" class="mx-select" aria-label="Filter by verdict"></select>
       <select id="mxTheme" class="mx-select" aria-label="Filter by theme"></select>
       <select id="mxSort" class="mx-select" aria-label="Sort by">
-        <option value="date-desc">Sort: Newest first</option>
-        <option value="date-asc">Sort: Oldest first</option>
+        <option value="date-desc">Sort: Newest (date said)</option>
+        <option value="date-asc">Sort: Oldest (date said)</option>
+        <option value="added-desc">Sort: Recently added</option>
+        <option value="added-asc">Sort: Added (oldest first)</option>
         <option value="person-asc">Sort: Person A–Z</option>
         <option value="person-desc">Sort: Person Z–A</option>
         <option value="admin-asc">Sort: Administration A–Z</option>
@@ -109,7 +111,8 @@
       <table class="mx-table">
         <thead>
           <tr>
-            <th data-sort="date" class="sortable"><span class="th-lbl">Date</span><span class="th-ar"></span></th>
+            <th data-sort="date" class="sortable"><span class="th-lbl">Date said</span><span class="th-ar"></span></th>
+            <th data-sort="added" class="sortable"><span class="th-lbl">Added</span><span class="th-ar"></span></th>
             <th data-sort="person" class="sortable"><span class="th-lbl">Person</span><span class="th-ar"></span></th>
             <th>Role</th>
             <th data-sort="admin" class="sortable"><span class="th-lbl">Administration</span><span class="th-ar"></span></th>

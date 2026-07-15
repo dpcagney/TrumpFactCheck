@@ -23,6 +23,7 @@ if (idx < 0) throw new Error("ENTRIES not found in data.js");
 const entries = eval(text.slice(idx + marker.length).replace(/;\s*$/, ""));
 const head = text.slice(0, idx).replace(/\s*$/, "") + "\n\n";
 
+const TODAY = new Date().toISOString().slice(0, 10); // date this normalizer runs = "added to site" date for new rows
 const ALLOWED = new Set(["False", "Misleading", "Needs Context", "Broken Promise", "Scandal", "Gaffe", "Overreach"]);
 const decode = (s) => String(s == null ? "" : s)
   .replace(/&amp;/g, "&").replace(/&lt;/g, "<").replace(/&gt;/g, ">")
@@ -85,6 +86,9 @@ function norm(e) {
     // provenance: "curated" (hand-reviewed & source-checked) is preserved; anything
     // else — e.g. rows added by the scheduled refresh without this field — is "auto".
     origin: e.origin === "curated" ? "curated" : "auto",
+    // "added": the date this entry first appeared on the site. Preserved once set;
+    // new rows (no valid `added`) are stamped with the date the normalizer runs.
+    added: /^\d{4}-\d{2}-\d{2}$/.test(e.added || "") ? e.added : TODAY,
     summary: decode(e.summary).trim(),
     source: { name: decode(e.source && e.source.name).trim(), url: (e.source && e.source.url || "").trim() },
   };

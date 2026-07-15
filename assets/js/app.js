@@ -194,6 +194,8 @@
   const mx = { q: "", role: "all", admin: "all", tag: "all", theme: "all", sort: "date-desc" };
   let THEME_MAP = {};
   const shortSum = (s) => (s.length > 150 ? s.slice(0, 147).replace(/\s+\S*$/, "") + "…" : s);
+  const MONTHS = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+  const fmtAdded = (iso) => { const m = /^(\d{4})-(\d{2})-(\d{2})$/.exec(iso || ""); return m ? `${MONTHS[+m[2] - 1]} ${+m[3]}, ${m[1]}` : (iso || ""); };
 
   function rhymesHTML(e) {
     const others = (THEME_MAP[e.theme] || []).filter((x) => x !== e);
@@ -233,7 +235,7 @@
     });
 
     const [key, dir] = mx.sort.split("-");
-    const field = { date: "date", person: "person", admin: "admin" }[key] || "date";
+    const field = { date: "date", added: "added", person: "person", admin: "admin" }[key] || "date";
     rows.sort((a, b) => {
       const av = a[field], bv = b[field];
       const cmp = field === "date" ? av.localeCompare(bv) : av.localeCompare(bv);
@@ -245,13 +247,14 @@
         (e) => `
       <tr class="mx-row">
         <td class="mx-date"><span class="mx-caret">▸</span><span class="prov prov-${e.origin === "curated" ? "curated" : "auto"}" title="${e.origin === "curated" ? "Curated & source-checked" : "Auto-added by the daily refresh — worth a spot-check"}">●</span>${esc(e.dateText)}</td>
+        <td class="mx-added">${esc(fmtAdded(e.added))}</td>
         <td class="mx-person">${esc(e.person)}</td>
         <td class="mx-role">${esc(e.role)}</td>
         <td class="mx-admin">${esc(e.admin)}</td>
         <td class="mx-what"><span class="mx-theme">${esc(e.theme)}</span>${esc(e.summary)}<span class="mx-src"><a href="${esc(e.source.url)}" target="_blank" rel="noopener noreferrer">↗ ${esc(e.source.name)}</a></span></td>
         <td><span class="badge ${TAG_CLASS(e.tag)}">${esc(e.tag)}</span></td>
       </tr>
-      <tr class="mx-detail" hidden><td colspan="6">${rhymesHTML(e)}</td></tr>`
+      <tr class="mx-detail" hidden><td colspan="7">${rhymesHTML(e)}</td></tr>`
       )
       .join("");
 

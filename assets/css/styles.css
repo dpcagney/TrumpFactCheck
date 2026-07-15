@@ -237,6 +237,7 @@ h1, h2, h3 { line-height: 1.15; letter-spacing: -0.02em; margin: 0; }
 .mx-table tbody tr:last-child td { border-bottom: none; }
 .mx-table tbody tr:hover { background: color-mix(in srgb, var(--brand) 6%, transparent); }
 .mx-date { font-variant-numeric: tabular-nums; white-space: nowrap; color: var(--muted); font-weight: 700; }
+.mx-added { font-variant-numeric: tabular-nums; white-space: nowrap; color: var(--muted); font-size: 0.82rem; }
 .mx-person { font-weight: 800; }
 .mx-role, .mx-admin { color: var(--muted); white-space: nowrap; }
 .mx-what { min-width: 300px; }
