@@ -226,7 +226,15 @@ h1, h2, h3 { line-height: 1.15; letter-spacing: -0.02em; margin: 0; }
 .prov-auto { color: var(--misleading); }
 .mx-theme { display: block; width: fit-content; font-size: 0.64rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.05em; color: var(--brand-2); background: color-mix(in srgb, var(--brand-2) 14%, transparent); padding: 2px 8px; border-radius: 999px; margin: 0 0 7px; }
 .mx-scroll { overflow-x: auto; border: 1px solid var(--line); border-radius: var(--radius); box-shadow: var(--shadow); }
-.mx-table { width: 100%; border-collapse: collapse; min-width: 860px; font-size: 0.9rem; }
+.mx-table { width: 100%; border-collapse: collapse; min-width: 920px; font-size: 0.9rem; table-layout: fixed; }
+.mx-table col.c-said { width: 8%; }
+.mx-table col.c-added { width: 8%; }
+.mx-table col.c-person { width: 12%; }
+.mx-table col.c-role { width: 15%; }
+.mx-table col.c-admin { width: 9%; }
+.mx-table col.c-what { width: 40%; }
+.mx-table col.c-verdict { width: 8%; }
+.mx-table td, .mx-table th { overflow-wrap: anywhere; }
 .mx-table thead th {
   text-align: left; padding: 13px 16px; background: var(--card-2); color: var(--muted);
   font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.08em; font-weight: 800;
@@ -241,8 +249,8 @@ h1, h2, h3 { line-height: 1.15; letter-spacing: -0.02em; margin: 0; }
 .mx-date { font-variant-numeric: tabular-nums; white-space: nowrap; color: var(--muted); font-weight: 700; }
 .mx-added { font-variant-numeric: tabular-nums; white-space: nowrap; color: var(--muted); font-size: 0.82rem; }
 .mx-person { font-weight: 800; }
-.mx-role, .mx-admin { color: var(--muted); white-space: nowrap; }
-.mx-what { min-width: 300px; }
+.mx-role, .mx-admin { color: var(--muted); }
+.mx-what { }
 .mx-src { display: block; margin-top: 7px; }
 .mx-src a { color: var(--accent); text-decoration: none; font-weight: 600; font-size: 0.82rem; }
 .mx-src a:hover { text-decoration: underline; }
@@ -255,6 +263,9 @@ h1, h2, h3 { line-height: 1.15; letter-spacing: -0.02em; margin: 0; }
 .mx-row.is-open { background: color-mix(in srgb, var(--brand) 9%, transparent); }
 .mx-detail > td { padding: 0; background: var(--card-2); border-bottom: 1px solid var(--line); }
 .mx-rhymes { padding: 16px 18px 18px 40px; }
+.mx-full { margin-bottom: 14px; }
+.mx-full-sum { margin: 0; color: var(--text); font-size: 0.92rem; }
+.mx-full-sum .source-link { white-space: nowrap; }
 .mx-rhymes-h { font-weight: 800; color: var(--brand-2); font-size: 0.82rem; margin-bottom: 12px; letter-spacing: 0.01em; }
 .mx-rhymes-list { margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 10px; }
 .mx-rhymes-list li { display: grid; grid-template-columns: 110px 210px 1fr; gap: 12px; align-items: baseline; font-size: 0.86rem; border-left: 2px solid color-mix(in srgb, var(--brand-2) 45%, var(--line)); padding-left: 12px; }

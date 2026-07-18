@@ -73,7 +73,9 @@
 
   function renderCards() {
     const wrap = $("#cards");
-    wrap.innerHTML = FACT_CHECKS.map(cardHTML).join("");
+    // newest first (by date said), matching the matrix default
+    const ordered = [...FACT_CHECKS].sort((a, b) => (b.date || "").localeCompare(a.date || ""));
+    wrap.innerHTML = ordered.map(cardHTML).join("");
     wireRhymeToggles();
     applyFilters();
   }
@@ -195,12 +197,14 @@
   const mx = { q: "", role: "all", admin: "all", tag: "all", theme: "all", sort: "date-desc" };
   let THEME_MAP = {};
   const shortSum = (s) => (s.length > 150 ? s.slice(0, 147).replace(/\s+\S*$/, "") + "…" : s);
+  const preview = (s) => (s.length > 105 ? s.slice(0, 102).replace(/\s+\S*$/, "") + "…" : s);
   const MONTHS = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
   const fmtAdded = (iso) => { const m = /^(\d{4})-(\d{2})-(\d{2})$/.exec(iso || ""); return m ? `${MONTHS[+m[2] - 1]} ${+m[3]}, ${m[1]}` : (iso || ""); };
 
   function rhymesHTML(e) {
+    const full = `<div class="mx-full"><p class="mx-full-sum">${esc(e.summary)} <a class="source-link" href="${esc(e.source.url)}" target="_blank" rel="noopener noreferrer">↗ ${esc(e.source.name)}</a></p></div>`;
     const others = (THEME_MAP[e.theme] || []).filter((x) => x !== e);
-    if (!others.length) return `<div class="mx-rhymes"><div class="mx-rhymes-h">No close parallels in the dataset yet.</div></div>`;
+    if (!others.length) return `<div class="mx-rhymes">${full}<div class="mx-rhymes-h">No close parallels in the dataset yet.</div></div>`;
     const items = others
       .map(
         (o) => `<li>
@@ -210,7 +214,7 @@
         </li>`
       )
       .join("");
-    return `<div class="mx-rhymes"><div class="mx-rhymes-h">📜 History rhymes — other “${esc(e.theme)}” episodes (${others.length}) across the administrations:</div><ul class="mx-rhymes-list">${items}</ul></div>`;
+    return `<div class="mx-rhymes">${full}<div class="mx-rhymes-h">📜 History rhymes — other “${esc(e.theme)}” episodes (${others.length}) across the administrations:</div><ul class="mx-rhymes-list">${items}</ul></div>`;
   }
 
   function uniqSorted(arr) {
@@ -252,7 +256,7 @@
         <td class="mx-person">${esc(e.person)}</td>
         <td class="mx-role">${esc(e.role)}</td>
         <td class="mx-admin">${esc(e.admin)}</td>
-        <td class="mx-what"><span class="mx-theme">${esc(e.theme)}</span>${esc(e.summary)}<span class="mx-src"><a href="${esc(e.source.url)}" target="_blank" rel="noopener noreferrer">↗ ${esc(e.source.name)}</a></span></td>
+        <td class="mx-what"><span class="mx-theme">${esc(e.theme)}</span>${esc(preview(e.summary))}</td>
         <td><span class="badge ${TAG_CLASS(e.tag)}">${esc(e.tag)}</span></td>
       </tr>
       <tr class="mx-detail" hidden><td colspan="7">${rhymesHTML(e)}</td></tr>`
