@@ -15,6 +15,36 @@
 
 const FACT_CHECKS = [
   {
+    "id": "canada-wildfires-forests-2026",
+    "claim": "Canada's wildfire smoke drifting into the U.S. is because Canada is “not properly maintaining their Forests, and Brush therein” — a “Debris Removal” problem.",
+    "topic": "Environment",
+    "verdict": "misleading",
+    "summary": "In a July 17, 2026 Truth Social post, Trump blamed Canada's forest management for the smoke reaching the U.S. Midwest and Northeast. Wildfire scientists on both sides of the border say the primary driver of worsening Canadian wildfires is climate change — hotter, drier conditions — not a lack of debris removal. Canada's vast boreal forest is largely remote and, experts note, cannot realistically be “raked” or fuel-managed at continental scale; such strategies would be infeasible and largely ineffective against the underlying trend.",
+    "sources": [
+      {
+        "name": "FactCheck.org — Major Driver of Worsening Canadian Wildfires Is Climate Change, Not Forest Mismanagement (Jul 2026)",
+        "url": "https://www.factcheck.org/2026/07/major-driver-of-worsening-canadian-wildfires-is-climate-change-not-forest-mismanagement/"
+      },
+      {
+        "name": "The Hill — Trump blames Canada for wildfires, but scientists point to climate change (Jul 2026)",
+        "url": "https://thehill.com/policy/energy-environment/5981743-trump-canada-wildfires-tariffs/"
+      }
+    ],
+    "rhyme": {
+      "president": "Ronald Reagan",
+      "year": "1981",
+      "title": "“Trees cause more pollution than automobiles do”",
+      "text": "President Reagan repeatedly downplayed industrial and automotive pollution, asserting in 1981 that “trees cause more pollution than automobiles do.” The line drew widespread ridicule — protesters hung “Chop me down before I kill again” signs on trees — because it inverted the science to deflect from the harder, human-caused sources of smog. Blaming nature or mismanagement for an environmental problem that experts trace to broader forces is a well-worn presidential move.",
+      "source": {
+        "name": "NASA Earth Observatory — “Killer” Trees? Not Exactly",
+        "url": "https://earthobservatory.nasa.gov/images/84021/killer-trees-not-exactly"
+      }
+    },
+    "date": "2026-07-17",
+    "dateText": "Jul 2026",
+    "added": "2026-07-31"
+  },
+  {
     "id": "china-voter-data-2026",
     "claim": "“China illegally acquired 220 million U.S. voter files… bought, stolen or hacked,” and intelligence officials “kept it secret and hidden” while falsely calling 2020 “the most secure election.”",
     "topic": "Elections",
