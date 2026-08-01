@@ -15,6 +15,36 @@
 
 const FACT_CHECKS = [
   {
+    "id": "walz-cyberattack-2026",
+    "claim": "Minnesota and Gov. Tim Walz are “behind” the recent cyberattacks on U.S. water systems.",
+    "topic": "National Security",
+    "verdict": "false",
+    "summary": "At a July 31, 2026 Cabinet meeting, Trump blamed Minnesota's Democratic governor — his 2024 opponents' running mate and a frequent critic — for the cyberattacks that struck local water utilities in several states. He offered no evidence. It is not publicly known who carried out the intrusions; U.S. and state officials have pointed to Iran as a leading suspect, not any domestic official. Fact-checkers found no basis whatsoever for the accusation.",
+    "sources": [
+      {
+        "name": "CNN — Trump baselessly claims Walz is 'behind' cyberattack (Jul 31, 2026)",
+        "url": "https://www.cnn.com/2026/07/31/politics/trump-fact-check-cabinet-walz-cyberattack-water"
+      },
+      {
+        "name": "AP FACT FOCUS — Trump blames Minnesota governor for cyberattacks, cites no evidence (Jul 31, 2026)",
+        "url": "https://www.baltimoresun.com/2026/07/31/fact-check-trump-cabinet-meeting/"
+      }
+    ],
+    "rhyme": {
+      "president": "John Adams",
+      "year": "1798",
+      "title": "The Alien and Sedition Acts",
+      "text": "Amid an undeclared naval war with France, President Adams and his Federalists branded their Jeffersonian-Republican opponents as disloyal agents of a foreign enemy — with scant proof — and used the Sedition Act to jail newspaper editors and critics. Casting a domestic political rival as secretly in league with a hostile foreign power, absent evidence, is one of the oldest moves in American politics. The backlash helped sweep Adams out of office in 1800, and the acts became a byword for overreach.",
+      "source": {
+        "name": "Britannica — Alien and Sedition Acts",
+        "url": "https://www.britannica.com/event/Alien-and-Sedition-Acts"
+      }
+    },
+    "date": "2026-07-31",
+    "dateText": "Jul 2026",
+    "added": "2026-08-01"
+  },
+  {
     "id": "canada-wildfires-forests-2026",
     "claim": "Canada's wildfire smoke drifting into the U.S. is because Canada is “not properly maintaining their Forests, and Brush therein” — a “Debris Removal” problem.",
     "topic": "Environment",
