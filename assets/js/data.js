@@ -15,6 +15,36 @@
 
 const FACT_CHECKS = [
   {
+    "id": "ai-energy-more-than-country-2026",
+    "claim": "The AI industry needs “more energy than the entire country produces right now… some people say almost double.”",
+    "topic": "Energy",
+    "verdict": "misleading",
+    "summary": "At a July 8, 2026 press conference, Trump wildly overstated AI's power appetite. Data-center demand is rising fast and is a real strain on the grid — but federal and independent analyses project data centers will account for roughly 9% to 25% of total U.S. electricity demand between 2028 and 2050, not 100% (let alone “almost double”) of everything the country generates. PolitiFact rated the claim Mostly False.",
+    "sources": [
+      {
+        "name": "PolitiFact — How big an energy drain will AI data centers be? (Jul 2026)",
+        "url": "https://www.politifact.com/factchecks/2026/jul/14/donald-trump/ai-data-centers-electricty-grid/"
+      },
+      {
+        "name": "Poynter — Will AI really consume more electricity than the US produces? (Jul 2026)",
+        "url": "https://www.poynter.org/fact-checking/2026/trump-ai-electricity-claim-fact-check/"
+      }
+    ],
+    "rhyme": {
+      "president": "Jimmy Carter",
+      "year": "1977",
+      "title": "“We could use up all the proven reserves of oil… by the end of the next decade”",
+      "text": "In his April 1977 “moral equivalent of war” energy address, President Carter warned that the world could exhaust all its proven oil reserves by the end of the 1980s. It didn't happen — proven reserves actually grew as prices, technology, and new discoveries changed the math. Dramatic, round-number warnings about energy running out (or running away) are a bipartisan presidential habit; the alarming figure rarely survives contact with the data.",
+      "source": {
+        "name": "Miller Center (UVA) — Carter's April 18, 1977 Address to the Nation on Energy",
+        "url": "https://millercenter.org/the-presidency/presidential-speeches/april-18-1977-address-nation-energy"
+      }
+    },
+    "date": "2026-07-08",
+    "dateText": "Jul 2026",
+    "added": "2026-08-03"
+  },
+  {
     "id": "walz-cyberattack-2026",
     "claim": "Minnesota and Gov. Tim Walz are “behind” the recent cyberattacks on U.S. water systems.",
     "topic": "National Security",
