@@ -15,6 +15,36 @@
 
 const FACT_CHECKS = [
   {
+    "id": "venezuela-oil-hundreds-billions-2026",
+    "claim": "Since the U.S. took over Venezuela's oil industry, “we're making hundreds of billions of dollars (in oil revenue), and so are they.”",
+    "topic": "Foreign Policy",
+    "verdict": "false",
+    "summary": "In an August 4, 2026 Fox News interview, Trump vastly overstated the payoff from the U.S. takeover of Venezuela's oil sector. The highest credible revenue figure since the takeover in January is about $13 billion — roughly one-tenth of the “hundreds of billions” Trump claimed for each country. Even the biggest announced pieces (tens of millions of barrels sold at around $56 a barrel, plus a projected $100 billion in future infrastructure spending) fall far short of the number he cited. PolitiFact rated it False.",
+    "sources": [
+      {
+        "name": "PolitiFact — Trump gasses up US-Venezuela oil revenue, but 'hundreds of billions' is too high (Aug 2026)",
+        "url": "https://www.politifact.com/factchecks/2026/aug/06/donald-trump/venezuela-oil-industry-us-gains/"
+      },
+      {
+        "name": "NPR — Trump says US to get 30 million to 50 million barrels of oil from Venezuela at market price (Jan 2026)",
+        "url": "https://www.npr.org/2026/01/07/nx-s1-5668993/trump-us-30-million-barrels-oil-venezuela"
+      }
+    ],
+    "rhyme": {
+      "president": "George W. Bush",
+      "year": "2003",
+      "title": "“Iraq will finance its own reconstruction”",
+      "text": "Selling the Iraq war, Bush-administration officials promised its costs would be covered by Iraqi oil. Deputy Defense Secretary Paul Wolfowitz told Congress in March 2003 that Iraq “can really finance its own reconstruction, and relatively soon,” projecting $50–$100 billion in oil revenue within a few years. Instead, U.S. taxpayers shouldered well over $100 billion in reconstruction and security costs. The promise of a self-paying, riches-generating foreign oil venture is a recurring mirage — the windfall almost never arrives as advertised.",
+      "source": {
+        "name": "Christian Science Monitor — Iraq war: Predictions made, and results",
+        "url": "https://www.csmonitor.com/World/Backchannels/2011/1222/Iraq-war-Predictions-made-and-results"
+      }
+    },
+    "date": "2026-08-04",
+    "dateText": "Aug 2026",
+    "added": "2026-08-07"
+  },
+  {
     "id": "drugs-by-sea-down-97-2026",
     "claim": "“Drugs entering our country by sea are down 97%” since the U.S. started striking alleged smuggling boats.",
     "topic": "Drug Policy",
