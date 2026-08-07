@@ -15,6 +15,36 @@
 
 const FACT_CHECKS = [
   {
+    "id": "reflecting-pool-vandalism-2026",
+    "claim": "The damage to the Lincoln Memorial Reflecting Pool was “vandalism” — a “300-foot slit” cut in the new liner with a knife or box cutter.",
+    "topic": "Justice",
+    "verdict": "false",
+    "summary": "Trump kept insisting the June 2026 Reflecting Pool damage was sabotage — even after his own Justice Department said otherwise. A July 31 motion from the U.S. Attorney for D.C., Jeanine Pirro, moved to dismiss a felony destruction-of-property charge, stating the damage resulted from a contractor's “flawed installation” and the rush to finish before the America 250 celebrations — “not vandalism as initially represented.” The charge against the accused man was dropped; Trump continued to claim vandalism anyway. PolitiFact rated the vandalism claim False.",
+    "sources": [
+      {
+        "name": "FactCheck.org — Trump's Continued Claims of Vandalism at Reflecting Pool Disputed by U.S. Attorney Memo (Aug 2026)",
+        "url": "https://www.factcheck.org/2026/08/trumps-continued-claims-of-vandalism-at-reflecting-pool-disputed-by-u-s-attorney-memo/"
+      },
+      {
+        "name": "PolitiFact — Trump falsely blames vandals in Reflecting Pool case (Aug 4, 2026)",
+        "url": "https://politifact.com/factchecks/2026/aug/04/donald-trump/jeanine-pirro-reflecting-pool-vandalism/"
+      }
+    ],
+    "rhyme": {
+      "president": "Lyndon B. Johnson",
+      "year": "1964",
+      "title": "The Gulf of Tonkin “second attack”",
+      "text": "On August 4, 1964, President Johnson told the nation that North Vietnamese boats had attacked U.S. destroyers a second time, and used it to win the war-authorizing Gulf of Tonkin Resolution. Declassified NSA documents later confirmed that second attack never happened — the intelligence had been misread and “skewed.” Clinging to a dramatic hostile-action story after your own government's evidence points elsewhere is an old pattern; the difference here is only one of stakes, not of kind.",
+      "source": {
+        "name": "Britannica — Gulf of Tonkin incident",
+        "url": "https://www.britannica.com/event/Gulf-of-Tonkin-incident"
+      }
+    },
+    "date": "2026-08-03",
+    "dateText": "Aug 2026",
+    "added": "2026-08-07"
+  },
+  {
     "id": "venezuela-oil-hundreds-billions-2026",
     "claim": "Since the U.S. took over Venezuela's oil industry, “we're making hundreds of billions of dollars (in oil revenue), and so are they.”",
     "topic": "Foreign Policy",
