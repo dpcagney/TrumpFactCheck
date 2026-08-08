@@ -15,6 +15,32 @@
 
 const FACT_CHECKS = [
   {
+    "id": "inflation-cherry-picked-2026",
+    "claim": "Inflation is “way down,” having “dropped by the largest amount in more than six years.”",
+    "topic": "Economy",
+    "verdict": "misleading",
+    "summary": "The statistic is real but cherry-picked. From May to June 2026 the monthly inflation rate did fall at its fastest pace in more than six years — but chiefly because energy prices had spiked during the war with Iran and then dropped once a ceasefire took hold. Trump repeatedly used that single good month to imply inflation is broadly “way down” from when he took office, glossing over the months of increases that preceded it and an annual rate that was not dramatically lower. FactCheck.org described the boast as cherry-picking.",
+    "sources": [
+      {
+        "name": "FactCheck.org — Trump's Cherry-Picked Inflation Boast (Aug 2026)",
+        "url": "https://www.factcheck.org/2026/08/trumps-cherry-picked-inflation-boast/"
+      }
+    ],
+    "rhyme": {
+      "president": "Richard Nixon",
+      "year": "1971–1972",
+      "title": "Wage-price controls and the inflation that came roaring back",
+      "text": "In August 1971 Nixon froze wages and prices, and inflation conveniently dipped through his 1972 re-election. Economist Milton Friedman warned the relief would last only “through the election” — and it did: once the controls loosened, the annual inflation rate climbed from about 1.4% on Election Day 1972 toward double digits. Touting a temporary, flattering inflation number while the underlying pressure keeps building is a time-honored presidential habit.",
+      "source": {
+        "name": "Federal Reserve History — Nixon Ends Convertibility and Announces Wage/Price Controls",
+        "url": "https://www.federalreservehistory.org/essays/gold-convertibility-ends"
+      }
+    },
+    "date": "2026-08-04",
+    "dateText": "Aug 2026",
+    "added": "2026-08-08"
+  },
+  {
     "id": "reflecting-pool-vandalism-2026",
     "claim": "The damage to the Lincoln Memorial Reflecting Pool was “vandalism” — a “300-foot slit” cut in the new liner with a knife or box cutter.",
     "topic": "Justice",
