@@ -15,6 +15,36 @@
 
 const FACT_CHECKS = [
   {
+    "id": "vaccines-autism-2026",
+    "claim": "Vaccines cause autism, the MMR shot isn't safe, and childhood autism “20 years ago” was “1 in 10,000.”",
+    "topic": "Health",
+    "verdict": "false",
+    "summary": "At an August 11, 2026 White House ceremony signing an executive order urging children get fewer vaccines on a slower schedule, Trump revived the long-debunked claim that vaccines cause autism — a link disproven by large studies across many countries. He also said autism prevalence “20 years ago” was “1 in 10,000,” when the CDC's known figure then was about 1 in 110; impugned the measles-mumps-rubella (MMR) vaccine that has been proven safe and effective for decades; and wildly overstated dose sizes, which are nowhere near “the size of a bottle of soda.” CNN and FactCheck.org rated the claims false.",
+    "sources": [
+      {
+        "name": "CNN (Daniel Dale) — Trump makes numerous false and misleading claims about vaccines and autism (Aug 11, 2026)",
+        "url": "https://www.cnn.com/2026/08/11/politics/fact-check-trump-false-vaccines-autism"
+      },
+      {
+        "name": "FactCheck.org — Trump's False MMR Vaccine Claims (Aug 2026)",
+        "url": "https://www.factcheck.org/2026/08/trumps-false-mmr-vaccine-claims/"
+      }
+    ],
+    "rhyme": {
+      "president": "Gerald Ford",
+      "year": "1976",
+      "title": "The swine flu vaccine “fiasco”",
+      "text": "Vaccines and presidential politics have collided badly before. In an election-year rush, Ford launched a program to vaccinate all Americans against a swine flu pandemic that never came; after 45 million shots and reports of a rare paralysis linked to the vaccine, the program was halted — and historians trace decades of vaccine hesitancy partly to that debacle. The politics run the opposite direction now, but the lesson rhymes: when leaders bend vaccine science to the moment, public trust is what pays.",
+      "source": {
+        "name": "Gerald R. Ford Presidential Library & Museum — The Swine Flu Immunization Program of 1976",
+        "url": "https://www.fordlibrarymuseum.gov/swine-flu-immunization-program-1976"
+      }
+    },
+    "date": "2026-08-11",
+    "dateText": "Aug 2026",
+    "added": "2026-08-13"
+  },
+  {
     "id": "vaccine-72-injections-2026",
     "claim": "The U.S. childhood vaccine schedule called for babies to get “72 injections” — versus “11” in an unnamed European country.",
     "topic": "Health",
