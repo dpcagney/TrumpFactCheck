@@ -15,6 +15,36 @@
 
 const FACT_CHECKS = [
   {
+    "id": "crime-drop-credit-2026",
+    "claim": "The record 2025 drop in violent crime and murder is a dramatic turnaround caused by my administration's policies.",
+    "topic": "Crime",
+    "verdict": "misleading",
+    "summary": "The 2024-to-2025 declines in the violent-crime and murder rates were indeed the largest one-year drops since the FBI began national estimates in 1936 — but experts say the causes are many and unclear, and the fall continues a multi-year decline that began after the 2020 pandemic spike, not a break Trump's policies created. He also credited an executive order for fewer police line-of-duty deaths, which the group that tracks them said was “likely” due to other factors. Notably, Trump had dismissed the very same FBI crime reports as “fake,” “phony,” and “a fraud” when they showed crime falling under Biden.",
+    "sources": [
+      {
+        "name": "FactCheck.org — Trump's Misleading Crime Drop Claims (Aug 2026)",
+        "url": "https://www.factcheck.org/2026/08/trumps-misleading-crime-drop-claims/"
+      },
+      {
+        "name": "Axios — FBI data for 2025 show biggest drop in violent crime in 90 years (Aug 2026)",
+        "url": "https://www.axios.com/2026/08/18/fbi-violent-crime-drop-2025"
+      }
+    ],
+    "rhyme": {
+      "president": "Bill Clinton",
+      "year": "1994",
+      "title": "Claiming credit for the 1990s crime drop",
+      "text": "Presidents love to own a falling crime rate. Bill Clinton long credited his 1994 crime bill for the historic 1990s decline — but crime had already begun dropping before the bill passed, and criminologists still don't agree on the causes, citing the waning crack epidemic, demographics, and the economy. Independent analyses found the law's effect was, at most, modest. Taking personal credit for a complex, already-underway trend is a bipartisan presidential habit.",
+      "source": {
+        "name": "Brennan Center for Justice — The Complex History of the Controversial 1994 Crime Bill",
+        "url": "https://www.brennancenter.org/our-work/analysis-opinion/complex-history-controversial-1994-crime-bill"
+      }
+    },
+    "date": "2026-08-20",
+    "dateText": "Aug 2026",
+    "added": "2026-08-21"
+  },
+  {
     "id": "inflation-lowest-10-presidents-2026",
     "claim": "“We have the lowest inflation of the last 10 presidents.”",
     "topic": "Economy",
@@ -1869,6 +1899,7 @@ const PERSPECTIVES = [
  */
 
 const ENTRIES = [
+  {"date":"2026-08-15","dateText":"Aug 2026","person":"Robert F. Kennedy Jr.","role":"Secretary of Health & Human Services","roleCat":"Cabinet / Agency Head","admin":"Trump II","party":"—","topic":"Vaccines / Science","tag":"False","theme":"Science & Health","origin":"curated","added":"2026-08-21","summary":"Defending Trump's Aug. 10 executive order to break up the combination MMR shot, Kennedy claimed on CNN that a “recent” study “just came out” that “very strongly supports” splitting it. No such credible study exists; the paper he appeared to reference is not new and not published in a reputable journal — one expert called it “junk.”","source":{"name":"FactCheck.org","url":"https://www.factcheck.org/2026/08/rfk-jr-falsely-claims-new-evidence-supports-splitting-mmr-vaccine/"}},
   {"date":"2026-08-10","dateText":"Aug 2026","person":"Ron Johnson","role":"U.S. Senator (R-Wisconsin)","roleCat":"Congress","admin":"Trump II","party":"Republican","topic":"Vaccines / COVID-19","tag":"False","theme":"Science & Health","origin":"curated","added":"2026-08-16","summary":"Claimed COVID-19 vaccines are linked to an “82% miscarriage rate” among women vaccinated in the first or second trimester. The figure comes from misreading a single 2021 study; numerous later studies have found no increased risk of miscarriage from COVID-19 vaccination.","source":{"name":"PolitiFact","url":"https://politifact.com/factchecks/2026/aug/12/ron-johnson/covid-19-vaccine-pregnancy-miscarriage-dr-fauci/"}},
   {"date":"2026-07-22","dateText":"Jul 2026","person":"Donald Trump","role":"President","roleCat":"President / Candidate","admin":"Trump II","party":"Republican","topic":"Elections","tag":"Misleading","theme":"Elections & Legitimacy","origin":"auto","added":"2026-07-28","summary":"Trump claimed “thousands” of noncitizens illegally voted in New Jersey and cited a DHS figure of 35,152 noncitizen registrations. PolitiFact found no evidence for the vote claim: the governor said about 400 noncitizens voted because of a DMV software error, and roughly 6,600 were mistakenly added to the rolls — far below the figures cited, which vetting typically shrinks further.","source":{"name":"PolitiFact","url":"https://politifact.com/factchecks/2026/jul/24/donald-trump/new-jersey-illegal-immigrants-vote-save/"}},
   {"date":"2026-07-16","dateText":"Jul 16, 2026","person":"Donald Trump","role":"President","roleCat":"President / Candidate","admin":"Trump II","party":"Republican","topic":"Elections","tag":"False","theme":"Elections & Legitimacy","origin":"auto","added":"2026-07-17","summary":"In a primetime White House address, Trump again claimed he won the 2020 election and asserted voting-machine vulnerabilities and foreign interference, releasing selected documents. Courts, state officials, and his own former administration found no credible evidence of fraud that changed the 2020 result, which he lost to Joe Biden.","source":{"name":"NPR","url":"https://www.npr.org/2026/07/16/nx-s1-5896448/trump-election-address"}},
