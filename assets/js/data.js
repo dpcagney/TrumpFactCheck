@@ -15,6 +15,36 @@
 
 const FACT_CHECKS = [
   {
+    "id": "hormuz-total-control-2026",
+    "claim": "“We have total control over the Strait of Hormuz… We own it” — secured by a “wall of steel” naval blockade.",
+    "topic": "Foreign Policy",
+    "verdict": "misleading",
+    "summary": "There is a real, effective U.S. naval blockade of Iran — it has barred shipping to and from Iranian ports and squeezed Tehran's revenue. But “total control… we own it” overstates a contested picture: traffic through the strait has fallen sharply, Iran says it controls much of the waterway and has threatened its own toll, and Middle East analysts say the U.S. does not fully control the strait and Iran retains the ability to disrupt it. PBS NewsHour and CNN found the “control” claim overstated and disputed.",
+    "sources": [
+      {
+        "name": "PBS NewsHour — Fact-checking Trump's claims about how the Iran war is going (Aug 2026)",
+        "url": "https://www.pbs.org/newshour/world/fact-checking-trumps-claims-about-how-the-iran-war-is-going"
+      },
+      {
+        "name": "CNN — Trump keeps saying the US controls the Strait of Hormuz. Does it? (Aug 13, 2026)",
+        "url": "https://www.cnn.com/2026/08/13/middleeast/who-controls-strait-of-hormuz-iran-us-intl-hnk"
+      }
+    ],
+    "rhyme": {
+      "president": "George W. Bush",
+      "year": "2003",
+      "title": "“Mission Accomplished”",
+      "text": "On May 1, 2003, beneath a “Mission Accomplished” banner on the USS Abraham Lincoln, Bush declared that “major combat operations in Iraq have ended.” The war then ground on for eight more years, and most of its casualties came after the speech. Declaring decisive control of a conflict that is still very much in motion is a familiar presidential temptation — and history tends to judge the banner harshly.",
+      "source": {
+        "name": "UVA Miller Center — The “Mission Accomplished” Moment",
+        "url": "https://millercenter.org/americas-war-in-iraq/mission-accomplished-moment"
+      }
+    },
+    "date": "2026-08-12",
+    "dateText": "Aug 2026",
+    "added": "2026-08-24"
+  },
+  {
     "id": "south-korea-cost-sharing-2026",
     "claim": "South Korea “agreed to pay close to $3 billion a year for protection, because they essentially weren't paying” before I took office.",
     "topic": "Foreign Policy",
