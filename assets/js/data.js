@@ -15,6 +15,32 @@
 
 const FACT_CHECKS = [
   {
+    "id": "canada-95-percent-reliant-2026",
+    "claim": "Canada's economy is “95%” reliant on the U.S., and its farm tariffs cause the entire U.S. trade deficit with Canada.",
+    "topic": "Trade",
+    "verdict": "false",
+    "summary": "Neither figure holds up. There's no basis for “95%”: about 72% of Canadian merchandise exports went to the U.S. in 2025 — down from roughly 76% in 2024, the lowest share since the early 1980s, and below 70% in the first half of 2026 as Canada diversifies its trade and some consumers boycott U.S. goods. And Canadian farm tariffs don't cause the U.S.-Canada trade deficit: that gap is overwhelmingly driven by U.S. imports of relatively cheap Canadian crude oil, and roughly 97% of U.S. agricultural exports to Canada already enter tariff-free. CNN's fact-checker called the sheer number of falsehoods “remarkable.”",
+    "sources": [
+      {
+        "name": "CNN (Daniel Dale) — Trump keeps making stuff up about Canada (Aug 25, 2026)",
+        "url": "https://www.cnn.com/2026/08/25/politics/fact-check-trump-canada"
+      }
+    ],
+    "rhyme": {
+      "president": "James K. Polk",
+      "year": "1844–1846",
+      "title": "“Fifty-Four Forty or Fight!”",
+      "text": "Aggressive American bluster toward its northern neighbor is nearly two centuries old. Expansionists in Polk's 1844 campaign demanded a border deep into modern Canada — “Fifty-Four Forty or Fight!” — threatening war with Britain over the Oregon Country. In office, Polk quietly compromised: the 1846 Oregon Treaty set the calm 49th-parallel line that still stands. The chest-thumping toward Canada rarely survives contact with the actual math and mutual interest.",
+      "source": {
+        "name": "The Canadian Encyclopedia — Oregon Treaty",
+        "url": "https://thecanadianencyclopedia.ca/en/article/oregon-treaty"
+      }
+    },
+    "date": "2026-08-25",
+    "dateText": "Aug 2026",
+    "added": "2026-08-26"
+  },
+  {
     "id": "hormuz-total-control-2026",
     "claim": "“We have total control over the Strait of Hormuz… We own it” — secured by a “wall of steel” naval blockade.",
     "topic": "Foreign Policy",
