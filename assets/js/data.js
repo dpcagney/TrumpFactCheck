@@ -15,6 +15,36 @@
 
 const FACT_CHECKS = [
   {
+    "id": "no-new-wars-promise-2026",
+    "claim": "“I didn't guarantee no war… I didn't promise anything” — I never pledged there would be no new wars.",
+    "topic": "Foreign Policy",
+    "verdict": "false",
+    "summary": "On NBC's “Meet the Press,” defending the war he launched against Iran, Trump denied ever promising to avoid new wars. In fact he pledged it repeatedly during the 2024 campaign — at an August 2024 Pennsylvania rally he declared, “Under Trump, we will have no more wars… and we will have prosperity and peace for all,” among other explicit no-new-wars promises (alongside vaguer vows to end “endless wars” and prevent “World War III”). CNN's fact-checker documented the direct pledges he was now disowning.",
+    "sources": [
+      {
+        "name": "CNN (Daniel Dale) — Trump told NBC he never promised not to start a new war. He did, repeatedly (Jun 8, 2026)",
+        "url": "https://www.cnn.com/2026/06/08/politics/fact-check-trump-new-wars"
+      },
+      {
+        "name": "Snopes — Did Trump promise 'no new wars'?",
+        "url": "https://www.snopes.com/fact-check/trump-no-new-wars/"
+      }
+    ],
+    "rhyme": {
+      "president": "Woodrow Wilson",
+      "year": "1916",
+      "title": "“He kept us out of war”",
+      "text": "Running for re-election in 1916, Wilson rode the slogan “He kept us out of war” to a narrow victory — and then, five months after his second inauguration, asked Congress to declare war on Germany, taking America into World War I. Campaigning on peace and then leading the nation into war is one of the most well-worn arcs in the presidency; the promise and the reality have parted ways many times before.",
+      "source": {
+        "name": "Britannica — United States presidential election of 1916",
+        "url": "https://www.britannica.com/event/United-States-presidential-election-of-1916"
+      }
+    },
+    "date": "2026-06-07",
+    "dateText": "Jun 2026",
+    "added": "2026-09-08"
+  },
+  {
     "id": "no-tax-on-tips-savings-2026",
     "claim": "Thanks to “no tax on tips,” 440,000 Nevada tipped workers “saved an average of $10,000 on their taxes,” and 130,000 in Georgia “saved an average of more than $7,000.”",
     "topic": "Economy",
