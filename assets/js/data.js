@@ -15,6 +15,32 @@
 
 const FACT_CHECKS = [
   {
+    "id": "zero-border-crossings-2026",
+    "claim": "“Zero illegal aliens have entered our country from the southern border in the last 15 months. Zero.”",
+    "topic": "Immigration",
+    "verdict": "misleading",
+    "summary": "Illegal crossings did fall sharply, and Customs and Border Protection says it released no migrants into the country over the 15 months ending in July 2026. But “zero… entered” is an exaggeration: some migrants still evaded the Border Patrol and crossed illegally during that span, as CBP's own apprehension figures show. A steep drop in releases and encounters is not the same as literally nobody getting in. CNN rated the absolute “zero” claim an exaggeration.",
+    "sources": [
+      {
+        "name": "CNN — Fact check: Trump makes numerous false claims in Republican convention speech (Sep 9, 2026)",
+        "url": "https://www.cnn.com/2026/09/09/politics/fact-check-republican-midterm-convention-night-1"
+      }
+    ],
+    "rhyme": {
+      "president": "Dwight D. Eisenhower",
+      "year": "1954",
+      "title": "“The immigration problem… solved”",
+      "text": "Border crackdowns declared total victories are an old story. Eisenhower's 1954 “Operation Wetback” swept up migrants across the Southwest, and officials trumpeted more than a million deportations (most estimates put it far lower); by 1957 the immigration service pronounced the problem solved. It wasn't — unauthorized migration resumed as the economic pull persisted, especially after the Bracero guest-worker program ended in 1964. Sweeping “we've completely stopped it” claims tend to outrun the durable reality.",
+      "source": {
+        "name": "Britannica — Operation Wetback",
+        "url": "https://www.britannica.com/topic/Operation-Wetback"
+      }
+    },
+    "date": "2026-09-09",
+    "dateText": "Sep 2026",
+    "added": "2026-09-11"
+  },
+  {
     "id": "trump-9-11-firefighters-2026",
     "claim": "Around 9/11, firefighters carried me out of a Lower Manhattan building as it was about to collapse — and it “still creaks” to this day.",
     "topic": "Personal Mythology",
