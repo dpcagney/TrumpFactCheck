@@ -15,6 +15,32 @@
 
 const FACT_CHECKS = [
   {
+    "id": "murderers-let-in-2026",
+    "claim": "Democrats let “11,888 murderers” into the country.",
+    "topic": "Immigration",
+    "verdict": "misleading",
+    "summary": "The figure comes from Immigration and Customs Enforcement's “non-detained docket” — noncitizens with homicide convictions who are in the U.S. but not in ICE custody. That total built up over decades and across multiple administrations, including Trump's own first term; many were convicted of crimes after entering, some long ago, and many are already in prison. It is not a count of murderers “let in” by the Biden administration. Studies also consistently find immigrants commit crimes at lower rates than native-born Americans.",
+    "sources": [
+      {
+        "name": "CNN — Fact check: numerous false claims in Republican convention speech (Sep 9, 2026)",
+        "url": "https://www.cnn.com/2026/09/09/politics/fact-check-republican-midterm-convention-night-1"
+      }
+    ],
+    "rhyme": {
+      "president": "Chester A. Arthur",
+      "year": "1882",
+      "title": "The Chinese Exclusion Act",
+      "text": "Casting immigrants as a dangerous menace to justify shutting the door is one of the oldest currents in American politics. In 1882, amid economic anxiety and open prejudice, Congress passed — and President Arthur signed — the Chinese Exclusion Act, the first U.S. law to bar a group by race or nationality, sold on lurid fears about the people it targeted. The alarm rarely matches the evidence: study after study has found immigrants are not more crime-prone than the native-born.",
+      "source": {
+        "name": "U.S. State Department, Office of the Historian — Chinese Immigration and the Chinese Exclusion Acts",
+        "url": "https://history.state.gov/milestones/1866-1898/chinese-immigration"
+      }
+    },
+    "date": "2026-09-09",
+    "dateText": "Sep 2026",
+    "added": "2026-09-15"
+  },
+  {
     "id": "ended-eight-wars-2026",
     "claim": "“I ended eight wars” — eight wars in eight months.",
     "topic": "Foreign Policy",
