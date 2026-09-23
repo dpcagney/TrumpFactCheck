@@ -15,6 +15,36 @@
 
 const FACT_CHECKS = [
   {
+    "id": "climate-con-job-un-2026",
+    "claim": "Climate change is “the greatest con job ever perpetrated on the world” — the planet is “cooling, not warming,” and the U.N.'s climate predictions “were all wrong.”",
+    "topic": "Environment",
+    "verdict": "false",
+    "summary": "In his Sept. 22, 2026 address to the U.N. General Assembly, Trump called climate change “the greatest con job” and a “scam,” insisted the planet is “cooling, not warming,” and said the predictions “were all wrong.” The science says otherwise: Earth is unmistakably warming, and the last ten-plus years are the hottest in the instrumental record, according to NASA and NOAA. Trump leaned on a single failed 1989 doomsday quote from one U.N. official to wave away the entire body of climate research built on decades of temperature, ocean and ice data. He also branded renewable energy a “scam,” even though wind and solar are now the cheapest sources of new electricity in most of the world.",
+    "sources": [
+      {
+        "name": "CNN — Fact check: Trump's false claims to the United Nations (Sep 22, 2026)",
+        "url": "https://www.cnn.com/2026/09/22/politics/fact-check-trump-united-nations"
+      },
+      {
+        "name": "PBS NewsHour — Fact-checking Trump's speech to the 2026 U.N. General Assembly",
+        "url": "https://www.pbs.org/newshour/politics/fact-checking-trumps-speech-to-the-2026-united-nations-general-assembly"
+      }
+    ],
+    "rhyme": {
+      "president": "Ronald Reagan",
+      "year": "1987",
+      "title": "The Ozone “Personal Protection” Plan",
+      "text": "Waving away inconvenient atmospheric science to spare industry is a well-worn move. In 1987, as evidence mounted that chlorofluorocarbons were tearing a hole in the ozone layer, Reagan's Interior Secretary Donald Hodel floated a “personal protection” plan — hats, sunglasses and sunscreen — instead of regulating the chemicals doing the damage. The idea was mocked within hours, even inside the administration. The reassuring part: the science won. The U.S. signed the Montreal Protocol that same year, CFCs were phased out worldwide, and the ozone layer is now healing. The denial faded; the data didn't.",
+      "source": {
+        "name": "The Washington Post — Administration Ozone Policy May Favor Sunglasses, Hats (May 29, 1987)",
+        "url": "https://www.washingtonpost.com/archive/politics/1987/05/29/administration-ozone-policy-may-favor-sunglasses-hats/a95a2b53-0070-4615-b162-92302cfeb141/"
+      }
+    },
+    "date": "2026-09-22",
+    "dateText": "Sep 2026",
+    "added": "2026-09-23"
+  },
+  {
     "id": "dividend-5000-tariffs-2026",
     "claim": "“I will issue a dividend to every adult citizen of the United States of America for $5,000” if Republicans win the House and Senate — paid for by tariff revenue.",
     "topic": "Economy",
