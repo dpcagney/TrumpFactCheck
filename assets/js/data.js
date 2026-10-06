@@ -15,6 +15,36 @@
 
 const FACT_CHECKS = [
   {
+    "id": "insurrection-act-claims-2025",
+    "claim": "If I invoke the Insurrection Act, “there's no more court cases,” and anyway “like 50% of the presidents” have invoked it.",
+    "topic": "Executive Power",
+    "verdict": "false",
+    "summary": "As his administration pushed to send troops into Portland, Chicago and other cities in October 2025, Trump described the Insurrection Act as a kind of legal trump card: invoke it and “there's no more court cases,” he said, adding that “like 50% of the presidents” have used it. Both claims are false. Invoking the Act would not switch off judicial review — such a move would almost certainly be challenged, and courts would weigh it, as judges did in blocking related troop deployments. And it is nowhere near half of presidents: the Act and its precursor laws have been invoked on about 30 occasions by 17 of the 45 presidents — roughly 38%. CNN and PolitiFact rated the claims false.",
+    "sources": [
+      {
+        "name": "CNN — Fact check: Trump's false claims about the Insurrection Act (Oct 21, 2025)",
+        "url": "https://www.cnn.com/2025/10/21/politics/fact-check-insurrection-act-trump"
+      },
+      {
+        "name": "PolitiFact — Have half of U.S. presidents invoked the Insurrection Act? (Oct 22, 2025)",
+        "url": "https://www.politifact.com/factchecks/2025/oct/22/donald-trump/Insurrection-Act-presidents-invoked-half/"
+      }
+    ],
+    "rhyme": {
+      "president": "Ulysses S. Grant",
+      "year": "1871",
+      "title": "The Insurrection Act vs. the Klan",
+      "text": "The Insurrection Act is old, often used, and — contrary to the idea that it puts a president above the law — has always run alongside the courts, not instead of them. No president invoked it more than Ulysses S. Grant, who used it six times in the 1870s. In 1871, armed with the new Ku Klux Klan Act, Grant declared nine South Carolina counties in rebellion and sent federal forces to break the Klan's terror campaign against Black voters. But the decisive blow came in court: the Justice Department's prosecutions and the South Carolina Klan trials jailed and scattered the first Klan. The tool can be used for good or ill — but it never meant “no more court cases.”",
+      "source": {
+        "name": "Federal Judicial Center — The South Carolina Ku Klux Klan Trials of 1871–1872",
+        "url": "https://www.fjc.gov/history/spotlight-judicial-history/ku-klux-klan-trials-1871-1872"
+      }
+    },
+    "date": "2025-10-20",
+    "dateText": "Oct 2025",
+    "added": "2026-10-06"
+  },
+  {
     "id": "iran-war-weeks-timeline-2026",
     "claim": "“I stated, numerous times, that it would take 4–6 weeks to get rid of THE IRAN NUCLEAR THREAT, and I did it in one night!” — I never said the war itself would be over in weeks.",
     "topic": "Foreign Policy",
