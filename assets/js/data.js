@@ -15,6 +15,36 @@
 
 const FACT_CHECKS = [
   {
+    "id": "ukraine-war-24-hours-2024",
+    "claim": "“I'll end the [Russia-Ukraine] war in 24 hours” — even before I take office.",
+    "topic": "Foreign Policy",
+    "verdict": "false",
+    "summary": "Throughout his 2023–2024 campaign, Trump pledged — by one count at least 53 separate times — to end the Russia-Ukraine war “in 24 hours,” often saying he'd do it even before taking office. He brushed off skeptics: “Everyone says, ‘Oh, no, you can't.' Absolutely I can.” He didn't. More than 2,300 hours — and then many months — into his second term, the war was still grinding on. Pressed in April 2025, Trump said the 24-hour vow had been “said in jest” to make a point; but at the time he'd repeatedly insisted he meant it literally. CNN catalogued 53 instances; PolitiFact's promise tracker rates it unfulfilled.",
+    "sources": [
+      {
+        "name": "CNN — Fact check: It wasn't 'in jest.' 53 times Trump said he'd end the Ukraine war within 24 hours or before taking office (Apr 25, 2025)",
+        "url": "https://www.cnn.com/2025/04/25/politics/fact-check-trump-ukraine-war"
+      },
+      {
+        "name": "PolitiFact — MAGA-Meter: End the Russia-Ukraine war within 24 hours",
+        "url": "https://www.politifact.com/truth-o-meter/promises/maga-meter-tracking-donald-trumps-2024-promises/promise/1641/end-the-russia-ukraine-war-within-24-hours/"
+      }
+    ],
+    "rhyme": {
+      "president": "Richard Nixon",
+      "year": "1968",
+      "title": "“New leadership” to end the war",
+      "text": "Vowing to make a grinding war vanish quickly is a reliable applause line — and a hard promise to keep. Running in 1968 as the Vietnam War tore the country apart, Richard Nixon pledged that “new leadership” would “end the war,” radiating confidence while pointedly declining to say how — he even mocked the later myth that he'd boasted of a “secret plan.” In office, the war ground on for four more years, widening into Cambodia and Laos before the 1973 cease-fire, at the cost of tens of thousands more lives. The confident promise of a fast finish rarely outlasts the war itself.",
+      "source": {
+        "name": "History News Network — Nixon never said he had a secret plan to end the war (Frank Gannon)",
+        "url": "https://www.historynewsnetwork.org/article/frank-gannon-nixon-never-said-he-had-a-secret-plan"
+      }
+    },
+    "date": "2024-01-01",
+    "dateText": "2023–2024 (campaign)",
+    "added": "2026-10-07"
+  },
+  {
     "id": "insurrection-act-claims-2025",
     "claim": "If I invoke the Insurrection Act, “there's no more court cases,” and anyway “like 50% of the presidents” have invoked it.",
     "topic": "Executive Power",
