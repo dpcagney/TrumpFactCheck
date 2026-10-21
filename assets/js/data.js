@@ -15,6 +15,32 @@
 
 const FACT_CHECKS = [
   {
+    "id": "schools-gender-surgery-2026",
+    "claim": "Schools are secretly sending children to hospitals for “sex-change” surgery — a kid can leave for school and “come back” after an operation, without the parents knowing.",
+    "topic": "Gender / Schools",
+    "verdict": "false",
+    "summary": "Reviving a claim he first pushed in 2024, Trump told supporters that schools are quietly shuttling children off to hospitals for gender-affirming (“sex-change”) surgery — even suggesting a child could leave for school and “come back” post-operation without a parent's knowledge. It's false. Schools do not perform or arrange surgeries of any kind; gender-affirming surgery on minors is uncommon, requires extensive medical evaluation and parental consent, and is never carried out through a school. A Harvard Medical School instructor said there are “no documented cases of schools taking children to hospitals for gender-affirming surgery,” and state education officials called the claim “unequivocally false.”",
+    "sources": [
+      {
+        "name": "CNN — Fact check: Trump brings back his 2024 lie that schools secretly send kids for gender surgery (Oct 20, 2026)",
+        "url": "https://www.cnn.com/2026/10/20/politics/fact-check-trump-gender-surgery-schools"
+      }
+    ],
+    "rhyme": {
+      "president": "Dwight D. Eisenhower",
+      "year": "1953",
+      "title": "The Lavender Scare",
+      "text": "Fear-driven panics that cast LGBTQ people as a hidden menace — to children or to the nation — are an old American reflex, and they recede. In 1953, President Eisenhower signed Executive Order 10450, which branded “sexual perversion” a security risk and set off the “Lavender Scare”: on little more than rumor and prejudice, thousands of gay federal workers were investigated, outed and forced from their jobs as supposed threats to the country. The premise was baseless — those employees had endangered no one. The purge dragged on for years before the civil-service ban was dropped in the 1970s, and today it is widely remembered as a cruel overreaction built on a myth.",
+      "source": {
+        "name": "U.S. National Park Service — The Lavender Scare",
+        "url": "https://www.nps.gov/articles/000/lavender-scare.htm"
+      }
+    },
+    "date": "2026-10-20",
+    "dateText": "Oct 2026",
+    "added": "2026-10-21"
+  },
+  {
     "id": "ballroom-east-wing-2025",
     "claim": "The new White House ballroom “won't interfere with the current building.”",
     "topic": "White House Ballroom",
