@@ -15,6 +15,36 @@
 
 const FACT_CHECKS = [
   {
+    "id": "ukraine-aid-350-billion-2026",
+    "claim": "“We gave $350 billion to Ukraine” — and got “nothing” back.",
+    "topic": "Foreign Policy",
+    "verdict": "false",
+    "summary": "At an Oct. 20, 2026 Oval Office event, Trump said “We gave $350 billion to Ukraine,” claiming the U.S. had received “nothing” in return. The figure is far above any credible tally. The Congressional Research Service counts about $174 billion appropriated across five bipartisan bills since 2022, and a defense budget analyst at CSIS noted Trump's number is “double what Congress has appropriated”; narrower counts of aid actually delivered run lower still — roughly $120–136 billion — with Europe having contributed more than the United States. FactCheck.org found the $350 billion claim inflated when Trump first used it in early 2025, and a fact-check of the October 2026 remarks rated it “absolutely false.” The “nothing back” line also ignores an April 2025 deal giving U.S. companies access to Ukraine's mineral reserves.",
+    "sources": [
+      {
+        "name": "FactCheck.org — Trump Exaggerates on U.S. and European Aid to Ukraine, Loans (Mar 2025)",
+        "url": "https://www.factcheck.org/2025/03/trump-exaggerates-on-u-s-and-european-aid-to-ukraine-loans/"
+      },
+      {
+        "name": "Kyiv Post — Fact Check: Trump on Russia's Advance, US Aid, and the Battle of Kyiv (Oct 21, 2026)",
+        "url": "https://www.kyivpost.com/post/87759"
+      }
+    ],
+    "rhyme": {
+      "president": "John F. Kennedy",
+      "year": "1960",
+      "title": "The “missile gap” that wasn't",
+      "text": "Dramatic, politically potent numbers about a foreign rival have a way of outrunning the facts. Campaigning in 1960, John F. Kennedy warned of a dangerous “missile gap” — insisting the United States had fallen behind the Soviet Union in nuclear missiles. It wasn't so: the U.S. actually held the lead in intercontinental missiles throughout the supposed gap. The alarming claim made for a potent campaign argument; once Kennedy was in office, his own defense secretary, Robert McNamara, conceded in February 1961 that “there is no missile gap today,” and by year's end the administration acknowledged America's lead. Striking foreign-policy figures make better arguments than accurate ones — and the record tends to catch up with them.",
+      "source": {
+        "name": "Arms Control Association — The Missile Gap Myth and Its Progeny (Greg Thielmann)",
+        "url": "https://www.armscontrol.org/act/2011-05/missile-gap-myth-its-progeny"
+      }
+    },
+    "date": "2026-10-20",
+    "dateText": "Oct 2026",
+    "added": "2026-10-22"
+  },
+  {
     "id": "schools-gender-surgery-2026",
     "claim": "Schools are secretly sending children to hospitals for “sex-change” surgery — a kid can leave for school and “come back” after an operation, without the parents knowing.",
     "topic": "Gender / Schools",
