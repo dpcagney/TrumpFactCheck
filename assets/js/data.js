@@ -15,6 +15,36 @@
 
 const FACT_CHECKS = [
   {
+    "id": "foreign-investment-trillions-2025",
+    "claim": "“$17 trillion” in new investment is pouring into America because of me — a figure he's since inflated to “$22 trillion.”",
+    "topic": "Economy",
+    "verdict": "false",
+    "summary": "Touting an economic boom, Trump repeatedly claimed that staggering sums — “$17 trillion,” then “$18 trillion,” and by 2026 “$22 trillion” — in new investment were flooding into the United States because of him. The numbers are fiction. CNN's item-by-item review found that even the White House's own tally (which it put at $8.8 trillion) was heavily inflated: many entries were vague “potential” estimates, trade figures rather than U.S. investment, or commitments that predated this term, and some were double-counted. For scale, total foreign direct investment in the U.S. was about $151 billion in 2024. CNN's Daniel Dale called the figure “fiction,” and PolitiFact rated the “$22 trillion” version False.",
+    "sources": [
+      {
+        "name": "CNN (Daniel Dale) — Fact check: Trump's “$17 trillion” investment figure is fiction (Oct 11, 2025)",
+        "url": "https://ktvz.com/politics/cnn-us-politics/2025/10/11/fact-check-trumps-17-trillion-investment-figure-is-fiction/"
+      },
+      {
+        "name": "PolitiFact — A cheat sheet to Trump's 2026 talking points (rates “$22 trillion” investment False) (Sep 29, 2026)",
+        "url": "https://politifact.com/article/2026/sep/29/a-cheat-sheet-to-trumps-2026-talking-points/"
+      }
+    ],
+    "rhyme": {
+      "president": "Ronald Reagan",
+      "year": "1981",
+      "title": "The tax cuts that would “pay for themselves”",
+      "text": "Grand, too-good-to-check economic numbers are a bipartisan Oval Office habit. Selling his 1981 tax cuts, Ronald Reagan and his supply-side advisers promised the reductions would unleash so much growth that they would largely pay for themselves and balance the budget. They didn't: revenue fell short, deficits ballooned, and the national debt roughly tripled — from under $1 trillion to about $2.9 trillion — forcing Reagan to sign tax increases in 1982 and after. Presidents love to attach a dazzling figure to their economic record; the arithmetic tends to catch up later.",
+      "source": {
+        "name": "PBS — Commanding Heights: Reaganomics",
+        "url": "https://www.pbs.org/wgbh/commandingheights/shared/minitextlo/ess_reaganomics.html"
+      }
+    },
+    "date": "2025-10-10",
+    "dateText": "Oct 2025",
+    "added": "2026-10-23"
+  },
+  {
     "id": "ukraine-aid-350-billion-2026",
     "claim": "“We gave $350 billion to Ukraine” — and got “nothing” back.",
     "topic": "Foreign Policy",
