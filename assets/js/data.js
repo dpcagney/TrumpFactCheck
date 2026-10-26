@@ -15,6 +15,36 @@
 
 const FACT_CHECKS = [
   {
+    "id": "gas-cheaper-than-biden-2026",
+    "claim": "Gas is cheaper than it was under Biden.",
+    "topic": "Economy",
+    "verdict": "false",
+    "summary": "Trump spent the 2026 midterm campaign insisting gas was cheaper than under Joe Biden. It wasn't. By late 2025 CNN found the year-over-year advantage had already vanished — the national average (about $3.06) had caught up to the same week a year earlier under Biden — and pump prices climbed further through 2026 as the Iran war pushed oil up. By the time Trump made the boast at an October 2026 Ohio rally, the national average was about $4.36 a gallon, higher than it was during roughly 95% of Biden's presidency, per CNN's fact-check. PolitiFact has repeatedly rated Trump's gas-price comparisons cherry-picked and misleading.",
+    "sources": [
+      {
+        "name": "CNN — Gas prices are now higher under Trump than Biden (Nov 25, 2025)",
+        "url": "https://abc17news.com/money/cnn-business-consumer/2025/11/25/gas-prices-are-now-higher-under-trump-than-biden/"
+      },
+      {
+        "name": "PolitiFact — Are gasoline prices under Joe Biden higher than under Trump? Cherry-picked (Dec 15, 2023)",
+        "url": "https://politifact.com/factchecks/2023/dec/15/donald-trump/are-gasoline-prices-under-joe-biden-ranging/"
+      }
+    ],
+    "rhyme": {
+      "president": "Barack Obama",
+      "year": "2012",
+      "title": "Gas prices as a political football",
+      "text": "Gas prices are one of the great bipartisan footballs of American politics — and presidents get blamed and take credit for prices they barely control. In 2012, with the national average near $4 a gallon, Republicans relentlessly blamed President Obama; fact-checkers and energy economists repeatedly noted that pump prices are set by global crude-oil markets — wars, OPEC, supply and demand — far more than by anything a president does. Prices later fell on a global oil glut Obama didn't engineer, just as they had risen for reasons beyond his control. Whoever is in office, the pump is a lousy scorecard for a presidency.",
+      "source": {
+        "name": "PolitiFact — Presidents don't control gas prices",
+        "url": "https://www.politifact.com/factchecks/2012/feb/20/george-allen/president-doesnt-control-gas-prices"
+      }
+    },
+    "date": "2026-10-12",
+    "dateText": "Oct 2026",
+    "added": "2026-10-26"
+  },
+  {
     "id": "autopen-pardons-void-2025",
     "claim": "Biden's pardons are “VOID” and “of no further force or effect” because they were signed by autopen.",
     "topic": "Executive Power",
