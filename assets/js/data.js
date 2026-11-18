@@ -15,6 +15,32 @@
 
 const FACT_CHECKS = [
   {
+    "id": "only-president-donate-salary-2026",
+    "claim": "I'm the only president who gives up his salary — “every other president took their salary.”",
+    "topic": "Personal Mythology",
+    "verdict": "false",
+    "summary": "In his post-election “60 Minutes” interview (aired Nov. 8, 2026), Trump boasted that he doesn't take the $400,000 presidential salary and that “every other president took their salary,” casting himself as uniquely selfless — though he hedged, “supposedly … I don't know if that's right.” He isn't unique. FactCheck.org rated the claim false, noting that Presidents Herbert Hoover and John F. Kennedy — both independently wealthy — also forwent or donated their presidential pay. Hoover gave his salary entirely to charity; Kennedy quietly donated his presidential pay to causes including the Boy Scouts and Girl Scouts, the United Negro College Fund and others. Trump declining his salary is real and unusual in the modern era, but the “only president ever” framing is false.",
+    "sources": [
+      {
+        "name": "FactCheck.org — FactChecking Trump's Post-Election '60 Minutes' Interview (Nov 10, 2026)",
+        "url": "https://www.factcheck.org/2026/11/factchecking-trumps-post-election-60-minutes-interview/"
+      }
+    ],
+    "rhyme": {
+      "president": "Herbert Hoover",
+      "year": "1929",
+      "title": "The president who gave his whole salary away",
+      "text": "The gesture Trump casts as unique has clear precedent. Herbert Hoover — a self-made millionaire who said he had never accepted compensation for federal service — gave his entire presidential salary, after taking office in 1929, to charity. Three decades later John F. Kennedy did the same, quietly donating his presidential pay to causes such as the Boy Scouts and Girl Scouts, the United Negro College Fund and others. A wealthy president declining his salary is a genuine and admirable tradition — and precisely because it has happened before, the boast of being the first and only one to do it doesn't hold up.",
+      "source": {
+        "name": "Herbert Hoover Presidential Library & Museum (National Archives) — “I've never accepted compensation … for federal service”",
+        "url": "https://hoover.blogs.archives.gov/2016/11/15/ive-never-accepted-compensationfor-federal-service/"
+      }
+    },
+    "date": "2026-11-08",
+    "dateText": "Nov 2026",
+    "added": "2026-11-18"
+  },
+  {
     "id": "mbs-khashoggi-knew-nothing-2025",
     "claim": "Saudi Crown Prince Mohammed bin Salman “knew nothing” about the 2018 murder of journalist Jamal Khashoggi.",
     "topic": "Foreign Policy",
